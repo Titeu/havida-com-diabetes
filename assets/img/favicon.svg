@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1a3a5c"/>
+  <!-- borboleta estilizada -->
+  <!-- asa superior esquerda -->
+  <path d="M32 32 C24 22 10 18 12 28 C14 36 26 34 32 32Z" fill="#7aafd4" opacity="0.9"/>
+  <!-- asa superior direita -->
+  <path d="M32 32 C40 22 54 18 52 28 C50 36 38 34 32 32Z" fill="#7aafd4" opacity="0.9"/>
+  <!-- asa inferior esquerda -->
+  <path d="M32 32 C22 36 12 44 16 50 C20 56 30 46 32 32Z" fill="#5a94c0" opacity="0.85"/>
+  <!-- asa inferior direita -->
+  <path d="M32 32 C42 36 52 44 48 50 C44 56 34 46 32 32Z" fill="#5a94c0" opacity="0.85"/>
+  <!-- corpo -->
+  <ellipse cx="32" cy="34" rx="2" ry="8" fill="#c8dff0"/>
+  <!-- antenas -->
+  <line x1="32" y1="26" x2="26" y2="18" stroke="#c8dff0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32" y1="26" x2="38" y2="18" stroke="#c8dff0" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="26" cy="17" r="2" fill="#c8dff0"/>
+  <circle cx="38" cy="17" r="2" fill="#c8dff0"/>
+</svg>
