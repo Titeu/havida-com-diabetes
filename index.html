@@ -249,8 +249,10 @@ section{position:relative}
     mask-image:linear-gradient(180deg,#000 40%,transparent 92%)}
   .hero__photo img{object-position:60% 24%}
   .hero__inner{width:100%;text-align:left;backdrop-filter:none}
-  .hero__book{width:120px;right:14px;bottom:auto;top:13%;opacity:.96}
-  .hero__bf{left:50%;top:28%}
+  /* livro e borboleta escondidos no mobile — evita sobreposição com logo e texto */
+  .hero__book{display:none}
+  .hero__bf{display:none}
+  .hero__logo{width:min(240px,68%)}
   .hero__lead{max-width:100%}
   .hero__scroll{display:none}
 }
@@ -368,7 +370,7 @@ section{position:relative}
 @media(max-width:480px){.sale__pillars{grid-template-columns:1fr}}
 
 /* ============ 4 · DEPOIMENTOS ============ */
-.testi{background:linear-gradient(180deg,var(--ivory),var(--cream))}
+.testi{background:linear-gradient(180deg,var(--ivory),var(--cream));overflow:hidden}
 .testi__lead{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:54px}
 .testi__big{font-family:"Fraunces";font-style:italic;font-size:clamp(24px,3.2vw,40px);color:var(--blue-800);line-height:1.22}
 .testi__big .mk{color:var(--blue-400);font-size:1.4em;font-family:"Fraunces"}
@@ -428,7 +430,6 @@ section{position:relative}
 .caps__stack{position:absolute;inset:0;transform-style:preserve-3d}
 .caps__card{position:absolute;left:50%;top:50%;
   width:clamp(290px,48vw,540px);min-height:clamp(280px,32vw,320px);
-  margin-left:calc(clamp(290px,48vw,540px) / -2);
   border-radius:38px;padding:clamp(26px,3.2vw,42px);color:#fff;
   display:flex;flex-direction:column;gap:15px;overflow:hidden;backface-visibility:hidden;
   background:linear-gradient(150deg,var(--c1,#608abb),var(--c2,#28548a));
@@ -452,7 +453,15 @@ section{position:relative}
 .caps__dots{display:flex;gap:8px;align-items:center}
 .caps__dots button{width:8px;height:8px;border-radius:50%;border:0;background:var(--blue-200);cursor:pointer;padding:0;transition:.35s var(--ease)}
 .caps__dots button.on{background:var(--blue-700);width:24px;border-radius:5px}
-@media(max-width:560px){.caps{height:clamp(540px,132vw,600px);perspective:1100px}}
+@media(max-width:560px){
+  .caps{height:clamp(480px,126vw,560px);perspective:none;overflow:hidden}
+  .caps__card{width:calc(100vw - 48px)}
+  .readers .t3d-card{
+    width:clamp(110px,33vw,130px);height:clamp(110px,33vw,130px);
+    margin-left:calc(clamp(110px,33vw,130px) / -2);
+    margin-top:calc(clamp(110px,33vw,130px) / -2)
+  }
+}
 
 /* ============ 5 · GALERIA / VISUAL STORY ============ */
 .gallery{background:linear-gradient(180deg,#12273f,#0e2138);color:#e7eef6;position:relative;overflow:hidden}
@@ -1216,7 +1225,7 @@ section{position:relative}
     function layout(){
       var w=wrap.clientWidth||900;
       /* raio mínimo p/ 12 cards de 300px a 30° sem overlap: ≥580px */
-      var radius = w<560 ? Math.max(340,w*0.86) : Math.min(640,w*0.54);
+      var radius = w<560 ? Math.max(260,w*0.82) : Math.min(640,w*0.54);
       cards.forEach(function(c,i){ c.style.transform='translate(-50%,-50%) rotateY('+(i*step)+'deg) translateZ('+radius+'px)'; });
     }
     layout(); window.addEventListener('resize',layout);
