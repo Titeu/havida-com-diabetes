@@ -170,7 +170,9 @@ section{position:relative}
   filter:drop-shadow(0 6px 16px rgba(34,80,135,.14))}
 .hero__tag{font-family:"Fraunces";font-weight:300;font-style:italic;font-size:clamp(19px,2.6vw,27px);
   color:var(--blue-700);max-width:430px;margin-bottom:14px;line-height:1.32}
-.hero__lead{font-size:clamp(15.5px,1.9vw,17.5px);color:var(--ink-soft);max-width:420px;margin-bottom:30px}
+.hero__lead{font-size:clamp(15.5px,1.9vw,17.5px);color:var(--ink-soft);max-width:420px;margin-bottom:16px}
+.hero__virgula{font-family:"Fraunces";font-style:italic;font-size:clamp(15px,1.7vw,17px);color:var(--blue-800);max-width:400px;margin-bottom:20px;line-height:1.45;opacity:.9}
+.hero__fisico{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-700);display:flex;align-items:center;gap:6px;margin-bottom:28px;opacity:.8}
 .hero__cta{display:flex;gap:14px;flex-wrap:wrap}
 .hero__meta{display:flex;align-items:center;gap:20px;margin-top:34px;flex-wrap:wrap}
 .hero__meta span{font-size:12.5px;font-weight:700;color:var(--blue-500);letter-spacing:.04em;
@@ -255,6 +257,7 @@ section{position:relative}
   .hero__logo{width:min(240px,68%)}
   .hero__lead{max-width:100%}
   .hero__scroll{display:none}
+  .hero__cta{display:none}
 }
 
 /* ============ WORD CAROUSEL ============ */
@@ -761,7 +764,9 @@ section{position:relative}
   <div class="hero__inner">
     <svg class="hero__logo logo-2t reveal" viewBox="205 722 1620 624" aria-label="Há vida com diabetes"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
     <p class="hero__tag reveal d1">Um livro sobre o que é difícil de dizer<br>e libertador de compreender.</p>
-    <p class="hero__lead reveal d2">Uma jornada de acolhimento, autoconhecimento e transformação para quem vive com diabetes — e para quem caminha ao lado.</p>
+    <p class="hero__lead reveal d2">Uma jornada de acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.</p>
+    <p class="hero__virgula reveal d2">"O diabetes é apenas uma vírgula na sua história, não o ponto final."</p>
+    <p class="hero__fisico reveal d3"><svg width="15" height="15"><use href="#i-book"/></svg> Livro físico — edição impressa</p>
     <div class="hero__cta reveal d3">
       <a href="#livro" class="btn btn--primary btn--lg"><svg><use href="#i-book"/></svg>Quero meu livro</a>
       <a href="#autora" class="btn btn--ghost btn--lg"><svg><use href="#i-play"/></svg>Conheça a história</a>
@@ -784,7 +789,7 @@ section{position:relative}
 <section class="sale pad" id="livro" data-dot="O livro">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="kicker kicker--c">O livro</span>
+      <span class="kicker kicker--c">📖 Livro físico impresso</span>
       <h2>Há vida com diabetes —<br><em>e ela pode ser boa.</em></h2>
       <p>Um guia de cuidado por inteiro: une o conhecimento sobre a doença à força emocional necessária para viver bem, todos os dias.</p>
     </div>
