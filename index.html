@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Há vida com diabetes — Elaine Rosa · O livro</title>
-<meta name="description" content="Há vida com diabetes — e ela pode ser boa. Uma jornada de acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado. Por Elaine Rosa.">
+<title>Há vida com diabetes — livro de Elaine Rosa</title>
+<meta name="description" content="Há vida com diabetes: livro de Elaine Rosa, psicóloga e educadora em diabetes, sobre acolhimento e autoconhecimento. Edição impressa, R$ 49,90, frete grátis em SP.">
+<link rel="canonical" href="https://havida-com-diabetes.vercel.app/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#faf6ec">
 <!-- Open Graph / WhatsApp / redes sociais -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://havida-com-diabetes.vercel.app/">
@@ -14,14 +17,59 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Há vida com diabetes">
+<meta property="og:image:alt" content="Capa do livro Há vida com diabetes, de Elaine Rosa">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Há vida com diabetes — livro de Elaine Rosa">
+<meta name="twitter:description" content="Psicóloga e educadora em diabetes. Um livro sobre acolhimento, autoconhecimento e transformação. R$ 49,90.">
 <meta name="twitter:image" content="https://havida-com-diabetes.vercel.app/assets/img/og-cover.webp">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Mulish:ital,wght@0,300..800;1,400..700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/mulish-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-900.webp" imagesrcset="assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" imagesizes="(max-width:900px) 100vw, 58vw" fetchpriority="high">
 <style>
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(assets/fonts/caveat-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(assets/fonts/fraunces-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(assets/fonts/fraunces-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(assets/fonts/mulish-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url(assets/fonts/mulish-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 :root{
   --ink:#16304e; --ink-soft:#52647a;
   --blue-900:#1d416b; --blue-800:#225087; --blue-700:#28548a;
@@ -52,9 +100,9 @@ body{
 /* butterfly texture overlay */
 body::before{
   content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
-  background-image:url("assets/img/textura-borboletas.jpg");
+  background-image:url("assets/img/textura-borboletas.webp");
   background-repeat:repeat;background-size:520px auto;
-  opacity:.045;mix-blend-mode:multiply;
+  opacity:.04;will-change:auto;
 }
 /* butterfly cursor */
 body{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23225087' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M100 72 C 98 96%2C 98 120%2C 100 142'/%3E%3Cpath d='M100 80 C 72 50%2C 30 50%2C 28 80 C 26 104%2C 64 106%2C 99 90'/%3E%3Cpath d='M99 96 C 74 100%2C 46 116%2C 54 142 C 60 160%2C 92 138%2C 99 116'/%3E%3Cpath d='M100 80 C 128 50%2C 170 50%2C 172 80 C 174 104%2C 136 106%2C 101 90'/%3E%3Cpath d='M101 96 C 126 100%2C 154 116%2C 146 142 C 140 160%2C 108 138%2C 101 116'/%3E%3Cpath d='M100 70 C 95 58%2C 88 50%2C 81 47'/%3E%3Cpath d='M100 70 C 105 58%2C 112 50%2C 119 47'/%3E%3C/g%3E%3C/svg%3E") 20 20, auto;}
@@ -216,7 +264,7 @@ section{position:relative}
   filter:drop-shadow(1px 5px 10px rgba(20,14,0,.14)) brightness(1.22) contrast(0.86) saturate(0.82);
   animation:bfFlyIn 4.0s cubic-bezier(.22,.61,.36,1) 1s both}
 .hero__bf .wing-wrap{animation:bfRest 3.6s ease-in-out infinite 5.2s;transform-origin:50% 50%}
-.hero__bf img{width:100%}
+.hero__bf img{width:100%;height:auto;display:block}
 .hero__bf--sm{left:18%;top:64%;width:clamp(54px,6vw,82px);opacity:.9;animation:floatB 11s ease-in-out infinite}
 @keyframes floatB{0%,100%{transform:translate(0,0) rotate(-6deg)}50%{transform:translate(18px,-26px) rotate(8deg)}}
 .hero__book{position:absolute;z-index:7;right:clamp(16px,4vw,72px);bottom:clamp(16px,4vh,52px);
@@ -430,7 +478,7 @@ section{position:relative}
 @media(max-width:560px){.t3d{height:clamp(400px,116vw,470px);perspective:1200px}}
 
 /* ---- LEITORES (photo ring) ---- */
-.readers{background:linear-gradient(rgba(222,230,243,.30),rgba(250,246,236,.34)),url("assets/img/comunidade-bg.jpg") center/cover no-repeat;
+.readers{background:linear-gradient(rgba(222,230,243,.30),rgba(250,246,236,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat;
   overflow:hidden}
 /* Padding-top maior para o carrossel não invadir a seção anterior */
 .readers.pad{padding-top:clamp(100px,14vw,180px)}
@@ -691,7 +739,25 @@ section{position:relative}
 /* utility */
 .up{display:inline-block}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+/* ---- auditoria: acessibilidade ---- */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;left:12px;top:-60px;z-index:10000;background:var(--blue-800);color:#fff;padding:12px 18px;border-radius:12px;font-weight:700;transition:top .2s}
+.skip:focus{top:12px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue-500);outline-offset:3px;border-radius:6px}
+.caps__dots button{position:relative}
+.caps__dots button{width:24px;height:24px;background:none;border:0}
+.caps__dots button::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:var(--blue-200);transform:translate(-50%,-50%);transition:.35s var(--ease)}
+.caps__dots button.on{width:36px;background:none;border-radius:0}
+.caps__dots button.on::after{width:24px;border-radius:5px;background:var(--blue-700)}
+.dots button::before{content:"";position:absolute;inset:-8px}
+.sale__details h3{color:#fff;font-family:"Mulish";font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.sale__details h3::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.18)}
+.pill h3{color:#fff;font-size:17px;font-weight:500;margin-bottom:5px}
+.foot__col h3{font-family:"Mulish";font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.co__lgpd{font-size:12px;color:var(--ink-soft);margin:10px 0;line-height:1.5}
+.co__lgpd a{color:var(--blue-700);text-decoration:underline}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://havida-com-diabetes.vercel.app/#site", "url": "https://havida-com-diabetes.vercel.app/", "name": "Há vida com diabetes", "inLanguage": "pt-BR"}, {"@type": "Person", "@id": "https://havida-com-diabetes.vercel.app/#autora", "name": "Elaine Rosa", "jobTitle": "Psicóloga e educadora em diabetes", "url": "https://psicologaalphaville.elainerosapsi.com.br/", "sameAs": ["https://instagram.com/havidacomdiabetes", "https://psicologaalphaville.elainerosapsi.com.br/"]}, {"@type": "Book", "@id": "https://havida-com-diabetes.vercel.app/#livro", "name": "Há vida com diabetes", "author": {"@id": "https://havida-com-diabetes.vercel.app/#autora"}, "publisher": {"@type": "Organization", "name": "Literare Books International"}, "isbn": "978-85-9455-117-7", "bookFormat": "https://schema.org/Paperback", "inLanguage": "pt-BR", "image": "https://havida-com-diabetes.vercel.app/assets/img/og-cover.webp", "description": "Um livro sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.", "offers": {"@type": "Offer", "price": "49.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://havida-com-diabetes.vercel.app/#livro"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Para quem é este livro?", "acceptedAnswer": {"@type": "Answer", "text": "Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos."}}, {"@type": "Question", "name": "Preciso ter diabetes para aproveitar a leitura?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional."}}, {"@type": "Question", "name": "O livro substitui o acompanhamento médico?", "acceptedAnswer": {"@type": "Answer", "text": "De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde."}}, {"@type": "Question", "name": "É um livro técnico e difícil?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende."}}, {"@type": "Question", "name": "Em quanto tempo recebo o exemplar?", "acceptedAnswer": {"@type": "Answer", "text": "Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra."}}, {"@type": "Question", "name": "Posso presentear alguém?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados."}}]}]}</script>
 </head>
 <body>
 
@@ -751,7 +817,8 @@ section{position:relative}
 <div class="progress" id="progress"></div>
 
 <!-- ===== NAV ===== -->
-<nav class="nav" id="nav">
+<a href="#conteudo" class="skip">Pular para o conteúdo</a>
+<nav class="nav" id="nav" aria-label="Principal">
   <div class="nav__brand" onclick="document.getElementById('top').scrollIntoView()">
     <svg class="logo-svg" viewBox="205 722 1620 624"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
   </div>
@@ -768,9 +835,7 @@ section{position:relative}
   </div>
   <div class="nav__right">
     <div class="nav__social">
-      <a href="https://instagram.com/havidacomdiabetes" target="_blank" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
-      <a href="#" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
-      <a href="#" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+      <a href="https://instagram.com/havidacomdiabetes" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
     </div>
     <a href="#" class="btn btn--primary nav__cta js-buy">Compre o livro</a>
     <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -779,7 +844,8 @@ section{position:relative}
 
 <!-- ===== 1 · HERO / CAPA ===== -->
 <header class="hero" id="top" data-dot="Início">
-  <div class="hero__photo" id="heroPhoto"><img src="assets/img/hero.jpg" alt="Mulher contemplando um campo de lavanda ao entardecer"></div>
+  <h1 class="sr-only">Há vida com diabetes — livro de Elaine Rosa, psicóloga e educadora em diabetes</h1>
+  <div class="hero__photo" id="heroPhoto"><img src="assets/img/hero.webp" srcset="assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" sizes="(max-width:900px) 100vw, 58vw" width="1600" height="2068" fetchpriority="high" decoding="async" alt="Mulher de costas contemplando um campo de lavanda ao entardecer"></div>
   <div class="hero__glow"></div>
   <div class="hero__inner">
     <svg class="hero__logo logo-2t reveal" viewBox="205 722 1620 624" aria-label="Há vida com diabetes"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
@@ -793,15 +859,16 @@ section{position:relative}
       <a href="#autora" class="btn btn--ghost btn--lg"><svg><use href="#i-play"/></svg>Conheça a história</a>
     </div>
   </div>
-  <div class="hero__bf" id="heroBf"><div class="wing-wrap"><img src="assets/img/butterfly.png" alt=""></div></div>
+  <div class="hero__bf" id="heroBf"><div class="wing-wrap"><img src="assets/img/butterfly.webp" width="420" height="420" alt="" decoding="async"></div></div>
   <svg class="hero__bf hero__bf--sm" viewBox="0 0 200 200" style="color:var(--blue-300)"><use href="#bf"/></svg>
   <div class="hero__book" id="heroBook">
-    <img src="assets/img/livro-sem-fundo.png" alt="Livro Há vida com diabetes" class="hero__book-img">
+    <img src="assets/img/livro-sem-fundo-420.webp" srcset="assets/img/livro-sem-fundo-420.webp 420w, assets/img/livro-sem-fundo.webp 792w" sizes="(max-width:900px) 60vw, 300px" width="792" height="908" decoding="async" alt="Livro Há vida com diabetes, de Elaine Rosa" class="hero__book-img">
   </div>
   <div class="hero__scroll"><span>Role para descobrir</span><div class="mouse"></div></div>
 </header>
 
 <!-- ===== WORD CAROUSEL ===== -->
+<main id="conteudo">
 <section class="marquee" aria-hidden="true">
   <div class="marquee__row r1" id="mq1"></div>
 </section>
@@ -819,10 +886,10 @@ section{position:relative}
       <div class="sale__left reveal">
         <div class="sale__halo"></div>
         <div class="sale__book" id="saleBook">
-          <img src="assets/img/livro-sem-fundo.png" alt="Livro Há vida com diabetes" class="sale__book-img">
+          <img src="assets/img/livro-sem-fundo-420.webp" srcset="assets/img/livro-sem-fundo-420.webp 420w, assets/img/livro-sem-fundo.webp 792w" sizes="(max-width:900px) 80vw, 460px" width="792" height="908" loading="lazy" decoding="async" alt="Livro Há vida com diabetes, de Elaine Rosa" class="sale__book-img">
         </div>
         <div class="sale__details">
-          <h4>Detalhes do produto</h4>
+          <h3>Detalhes do produto</h3>
           <dl>
             <div><dt>Editora</dt><dd>Literare Books International</dd></div>
             <div><dt>Data da publicação</dt><dd>1 de janeiro de 2018</dd></div>
@@ -840,14 +907,14 @@ section{position:relative}
       <div class="sale__right">
         <span class="kicker reveal">O que você vai encontrar</span>
         <div class="sale__pillars">
-          <div class="pill reveal d1"><svg><use href="#i-drop"/></svg><h4>Cuidados externos</h4><p>Medicalização, reeducação alimentar, atividade física e monitorização da glicemia.</p></div>
-          <div class="pill reveal d2"><svg><use href="#i-heart"/></svg><h4>Cuidados internos</h4><p>Medos, aceitação da doença e a descoberta da sua força interna.</p></div>
-          <div class="pill reveal d3"><svg><use href="#i-spark"/></svg><h4>Emoções no controle</h4><p>Como a forma de se enxergar influencia diretamente nos resultados do tratamento.</p></div>
-          <div class="pill reveal d4"><svg><use href="#i-shield"/></svg><h4>Rede de apoio</h4><p>O papel fundamental da família para superar o diagnóstico e se adaptar.</p></div>
+          <div class="pill reveal d1"><svg><use href="#i-drop"/></svg><h3>Cuidados externos</h3><p>Medicalização, reeducação alimentar, atividade física e monitorização da glicemia.</p></div>
+          <div class="pill reveal d2"><svg><use href="#i-heart"/></svg><h3>Cuidados internos</h3><p>Medos, aceitação da doença e a descoberta da sua força interna.</p></div>
+          <div class="pill reveal d3"><svg><use href="#i-spark"/></svg><h3>Emoções no controle</h3><p>Como a forma de se enxergar influencia diretamente nos resultados do tratamento.</p></div>
+          <div class="pill reveal d4"><svg><use href="#i-shield"/></svg><h3>Rede de apoio</h3><p>O papel fundamental da família para superar o diagnóstico e se adaptar.</p></div>
         </div>
 
         <div class="sale__offer reveal d2">
-          <img src="assets/img/selo-frete.png" alt="Frete gratuito para todo o Estado de São Paulo" class="sale__selo">
+          <img src="assets/img/selo-frete.webp" width="440" height="299" loading="lazy" decoding="async" alt="Frete gratuito para todo o Estado de São Paulo" class="sale__selo">
           <div class="sale__price">
             <span class="cur">R$</span><span class="now">49,90</span>
             <span class="old">R$ 59,00</span>
@@ -872,7 +939,7 @@ section{position:relative}
     <div class="author__grid">
       <div class="author__media reveal">
         <svg class="author__deco" viewBox="0 0 200 200"><use href="#bf"/></svg>
-        <div class="author__frame"><img src="assets/img/author.jpg" alt="Elaine Rosa, autora de Há vida com diabetes"></div>
+        <div class="author__frame"><img src="assets/img/author.webp" width="1100" height="733" loading="lazy" decoding="async" alt="Elaine Rosa, autora de Há vida com diabetes"></div>
         <div class="author__dedicatoria reveal d2">
           <p class="ded-title">Dedicatória</p>
           <p>Dedico este livro a todos os diabéticos e seus familiares que, como eu, lutam diariamente em prol de uma vida com qualidade, ampliando suas visões de mundo mediante a disciplina e a coragem de, todos os dias, lutar pela saúde.</p>
@@ -895,7 +962,7 @@ section{position:relative}
           <span>Pós-graduada em Educação em Diabetes (ANBED)</span>
           <span>Professional Coach (SBC)</span>
         </div>
-        <a href="https://psicologaalphaville.elainerosapsi.com.br/" target="_blank" rel="noopener" class="btn btn--ghost reveal d4" style="margin-top:28px;align-self:flex-start">Saiba mais sobre a autora →</a>
+        <a href="https://psicologaalphaville.elainerosapsi.com.br/" target="_blank" rel="noopener" rel="noopener" class="btn btn--ghost reveal d4" style="margin-top:28px;align-self:flex-start">Saiba mais sobre a autora →</a>
       </div>
     </div>
   </div>
@@ -923,13 +990,13 @@ section{position:relative}
 <!-- ===== 4 · DEPOIMENTOS ===== -->
 <section class="testi pad" id="depoimentos" data-dot="Depoimentos">
   <div class="wrap">
-    <div class=”testi__lead”>
+    <div class="testi__lead">
       <div>
-        <span class=”kicker reveal”>Quem leu, sentiu</span>
-        <h2 class=”reveal d1” style=”font-size:clamp(34px,5vw,60px);margin:18px 0 14px;font-weight:400”>A voz da <em>comunidade</em></h2>
-        <p class=”testi__big reveal d2”><span class=”mk”>”</span>Mais do que um livro sobre diabetes, um abraço em forma de palavras.<span class=”mk”>”</span></p>
+        <span class="kicker reveal">Quem leu, sentiu</span>
+        <h2 class="reveal d1" style="font-size:clamp(34px,5vw,60px);margin:18px 0 14px;font-weight:400">A voz da <em>comunidade</em></h2>
+        <p class="testi__big reveal d2"><span class="mk">“</span>Mais do que um livro sobre diabetes, um abraço em forma de palavras.<span class="mk">”</span></p>
       </div>
-      <p class="reveal d2" style="color:var(--ink-soft);font-size:16px">Histórias de leitores e leitoras que encontraram nestas páginas o acolhimento e a coragem para recomeçar. <em style="color:var(--blue-500)">Espaço editável para os depoimentos reais dos seus leitores.</em></p>
+      <p class="reveal d2" style="color:var(--ink-soft);font-size:16px">Histórias de leitores e leitoras que encontraram nestas páginas o acolhimento e a coragem para recomeçar.</p>
     </div>
     <div class="caps" id="caps">
       <div class="caps__stack" id="capsStack"></div>
@@ -991,14 +1058,15 @@ section{position:relative}
         <div class="faq__help reveal d2">
           <b>Fale com a gente</b>
           <p>Atendimento humano e acolhedor, de segunda a sexta.</p>
-          <a href="https://wa.me/5511996221013" target="_blank" class="btn btn--primary"><svg><use href="#i-phone"/></svg>(11) 99622-1013</a>
+          <a href="https://wa.me/5511996221013" target="_blank" rel="noopener" class="btn btn--primary"><svg><use href="#i-phone"/></svg>(11) 99622-1013</a>
         </div>
       </div>
-      <div class="faq__list" id="faqList"></div>
+      <div class="faq__list" id="faqList"><div class="acc reveal d1"><button class="acc__q" aria-expanded="false">Para quem é este livro?<span class="ic"></span></button><div class="acc__a"><p>Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos.</p></div></div><div class="acc reveal d2"><button class="acc__q" aria-expanded="false">Preciso ter diabetes para aproveitar a leitura?<span class="ic"></span></button><div class="acc__a"><p>Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional.</p></div></div><div class="acc reveal d3"><button class="acc__q" aria-expanded="false">O livro substitui o acompanhamento médico?<span class="ic"></span></button><div class="acc__a"><p>De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde.</p></div></div><div class="acc reveal"><button class="acc__q" aria-expanded="false">É um livro técnico e difícil?<span class="ic"></span></button><div class="acc__a"><p>Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende.</p></div></div><div class="acc reveal"><button class="acc__q" aria-expanded="false">Em quanto tempo recebo o exemplar?<span class="ic"></span></button><div class="acc__a"><p>Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra.</p></div></div><div class="acc reveal"><button class="acc__q" aria-expanded="false">Posso presentear alguém?<span class="ic"></span></button><div class="acc__a"><p>Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados.</p></div></div></div>
     </div>
   </div>
 </section>
 
+</main>
 <!-- ===== 7 · RODAPÉ ===== -->
 <footer class="foot" id="contato" data-dot="Contato">
   <div class="wrap">
@@ -1013,13 +1081,11 @@ section{position:relative}
         <svg class="logo-svg" viewBox="205 722 1620 624" style="color:#cfddec"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
         <p>Um livro de Elaine Rosa sobre acolhimento, autoconhecimento e a coragem de viver bem — apesar do diabetes.</p>
         <div class="foot__social">
-          <a href="https://instagram.com/havidacomdiabetes" target="_blank" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+          <a href="https://instagram.com/havidacomdiabetes" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
         </div>
       </div>
       <div class="foot__col">
-        <h5>Navegue</h5>
+        <h3>Navegue</h3>
         <a href="#top">Início</a>
         <a href="#autora">A autora</a>
         <a href="#livro">O livro</a>
@@ -1027,29 +1093,29 @@ section{position:relative}
         <a href="#lancamento">Lançamento</a>
       </div>
       <div class="foot__col">
-        <h5>O livro</h5>
+        <h3>O livro</h3>
         <a href="#livro">Comprar agora</a>
         <a href="#faq">Perguntas frequentes</a>
-        <a href="#">Literare Books Int.</a>
-        <a href="#">ISBN 978-85-9455-117-7</a>
+        <span>Literare Books Int.</span>
+        <span>ISBN 978-85-9455-117-7</span>
       </div>
       <div class="foot__col foot__contact">
-        <h5>Contato</h5>
-        <a href="https://wa.me/5511996221013" target="_blank"><svg><use href="#i-phone"/></svg>(11) 99622-1013</a>
-        <a href="https://instagram.com/havidacomdiabetes" target="_blank"><svg><use href="#i-ig"/></svg>@havidacomdiabetes</a>
-        <a href="#"><svg><use href="#i-globe"/></svg>havidacomdiabetes.com.br</a>
+        <h3>Contato</h3>
+        <a href="https://wa.me/5511996221013" target="_blank" rel="noopener"><svg><use href="#i-phone"/></svg>(11) 99622-1013</a>
+        <a href="https://instagram.com/havidacomdiabetes" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@havidacomdiabetes</a>
+        
         <a href="mailto:havidacomdiabetes@gmail.com"><svg><use href="#i-mail"/></svg>havidacomdiabetes@gmail.com</a>
       </div>
     </div>
     <div class="foot__bar">
-      <span>© 2024 Há vida com diabetes · Elaine Rosa. Todos os direitos reservados.</span>
+      <span>© <span id="yr">2026</span> Há vida com diabetes · Elaine Rosa. Todos os direitos reservados. · <a href="privacidade.html" style="text-decoration:underline">Privacidade</a></span>
       <span>Feito com <svg style="width:13px;height:13px;color:var(--blue-300);vertical-align:-2px"><use href="#i-heart"/></svg> e muita esperança.</span>
     </div>
   </div>
 </footer>
 
 <!-- ===== CHECKOUT / ENTREGA ===== -->
-<div class="co" id="co" aria-hidden="true">
+<div class="co" id="co" role="dialog" aria-modal="true" aria-labelledby="coTitle" inert aria-hidden="true">
   <div class="co__card" role="dialog" aria-modal="true" aria-labelledby="coTitle">
     <button class="co__x" id="coX" aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
 
@@ -1059,7 +1125,7 @@ section{position:relative}
       <h3 id="coTitle">Para onde enviamos seu livro?</h3>
       <p class="co__sub">Preencha seu endereço de entrega. Em seguida você paga <b>R$ 49,90 no PIX</b> ou no <b>cartão em até 9x</b> (com acréscimo da operadora).</p>
       <div class="co__summary">
-        <div class="ci"><img src="assets/img/capa-front.jpg?v=2" alt="Livro Há vida com diabetes">
+        <div class="ci"><img src="assets/img/capa-front.webp" width="727" height="1000" loading="lazy" alt="Capa do livro Há vida com diabetes">
           <div><b>Há vida com diabetes</b><small>por Elaine Rosa</small></div></div>
         <span class="cp">R$ 49,90</span>
       </div>
@@ -1081,10 +1147,11 @@ section{position:relative}
           <div class="co__field"><label>Cidade *</label><input name="cidade" autocomplete="address-level2" placeholder="Cidade"></div>
           <div class="co__field" style="max-width:84px"><label>UF *</label><input name="uf" maxlength="2" autocomplete="address-level1" placeholder="SP" style="text-transform:uppercase"></div>
         </div>
+        <p class="co__lgpd">Usamos seus dados apenas para entregar o seu pedido. <a href="privacidade.html" target="_blank" rel="noopener">Política de privacidade</a>.</p>
         <button type="submit" class="btn btn--gold btn--lg co__btn">Continuar para o pagamento<svg><use href="#i-arrow"/></svg></button>
       </form>
       <div class="co__trust"><svg><use href="#i-shield"/></svg>Seus dados são usados apenas para a entrega do seu livro.</div>
-      <div class="co__suporte">Dúvidas? Fale pelo WhatsApp: <a href="https://wa.me/5511996221013" target="_blank" rel="noopener">(11) 99622-1013</a></div>
+      <div class="co__suporte">Dúvidas? Fale pelo WhatsApp: <a href="https://wa.me/5511996221013" target="_blank" rel="noopener" rel="noopener">(11) 99622-1013</a></div>
     </div>
 
     <!-- STEP 2 · enviar + pagar -->
@@ -1095,15 +1162,15 @@ section{position:relative}
       <div class="co__steps">
         <div class="co__step"><div class="num">1</div><div class="sc">
           <h4>Envie seu endereço para a gente</h4>
-          <a id="coWa" href="#" target="_blank" rel="noopener" class="btn co__wa"><svg><use href="#i-phone"/></svg>Enviar endereço no WhatsApp</a>
+          <a id="coWa" href="#" target="_blank" rel="noopener" rel="noopener" class="btn co__wa"><svg><use href="#i-phone"/></svg>Enviar endereço no WhatsApp</a>
         </div></div>
         <div class="co__step"><div class="num">2</div><div class="sc">
           <h4>Pague R$ 49,90 no PIX ou em até 9x no cartão</h4>
-          <a id="coPay" href="#" target="_blank" rel="noopener" class="btn btn--gold"><svg><use href="#i-book"/></svg>Ir para o pagamento</a>
+          <a id="coPay" href="#" target="_blank" rel="noopener" rel="noopener" class="btn btn--gold"><svg><use href="#i-book"/></svg>Ir para o pagamento</a>
         </div></div>
       </div>
       <p class="co__note">Assim que recebermos seu endereço e a confirmação do pagamento, seu livro é despachado com carinho. ✨</p>
-      <div class="co__suporte">Dúvidas? Fale pelo WhatsApp: <a href="https://wa.me/5511996221013" target="_blank" rel="noopener">(11) 99622-1013</a></div>
+      <div class="co__suporte">Dúvidas? Fale pelo WhatsApp: <a href="https://wa.me/5511996221013" target="_blank" rel="noopener" rel="noopener">(11) 99622-1013</a></div>
       <button class="btn btn--ghost co__btn" id="coBack">Voltar e revisar meus dados</button>
     </div>
   </div>
@@ -1113,7 +1180,7 @@ section{position:relative}
 <div class="lb" id="lb">
   <button class="lb__x" id="lbX" aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
   <button class="lb__arrow prev" id="lbPrev" aria-label="Anterior"><svg style="transform:rotate(180deg)"><use href="#i-arrow"/></svg></button>
-  <img class="lb__img" id="lbImg" src="" alt="">
+  <img class="lb__img" id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
   <button class="lb__arrow next" id="lbNext" aria-label="Próximo"><svg><use href="#i-arrow"/></svg></button>
   <div class="lb__cap" id="lbCap"></div>
 </div>
@@ -1122,6 +1189,7 @@ section{position:relative}
 <div class="dots" id="dots"></div>
 
 <script>
+requestAnimationFrame(function(){ setTimeout(function(){
 (function(){
   "use strict";
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1186,7 +1254,7 @@ section{position:relative}
   var dotsWrap = $('#dots');
   secs.forEach(function(s,i){
     var b = document.createElement('button');
-    b.setAttribute('data-label', s.getAttribute('data-dot'));
+    b.setAttribute('data-label', s.getAttribute('data-dot')); b.setAttribute('aria-label','Ir para '+s.getAttribute('data-dot')); b.type='button';
     b.addEventListener('click', function(){ s.scrollIntoView({behavior:'smooth'}); });
     dotsWrap.appendChild(b);
   });
@@ -1229,18 +1297,18 @@ section{position:relative}
 
   /* ---- TESTIMONIALS ---- */
   var testi = [
-    {t:"Eu vivia com medo do diagnóstico. Este livro me deu colo e, ao mesmo tempo, um chão firme para recomeçar. Li chorando e terminei sorrindo.", n:"Mariana A.", r:"Leitora · São Paulo", c1:"#7095c0", c2:"#28548a"},
-    {t:"Minha mãe tem diabetes e eu não sabia como ajudar. A Elaine me ensinou que cuidar também é caminhar ao lado.", n:"Rafael T.", r:"Filho e cuidador", c1:"#608abb", c2:"#1d416b"},
-    {t:"Finalmente alguém falou da parte que ninguém fala: as emoções. Senti que cada página tinha sido escrita para mim.", n:"Cláudia M.", r:"11 anos com diabetes", c1:"#86a5cb", c2:"#2d5a9e"},
-    {t:"Leitura leve, honesta e cheia de esperança. Recomendo para todo recém-diagnosticado — e para a família inteira.", n:"Dr. Henrique L.", r:"Endocrinologista", c1:"#5e9ed6", c2:"#225087"},
-    {t:"A frase “você pode ter diabetes, mas a diabetes só terá você se você não se cuidar” virou meu lema de vida.", n:"Patrícia S.", r:"Leitora · Curitiba", c1:"#608abb", c2:"#16304e"},
-    {t:"Comprei por curiosidade e ganhei uma companheira de jornada. O autocuidado virou hábito, como escovar os dentes.", n:"Júlia R.", r:"Leitora · Recife", c1:"#7095c0", c2:"#28548a"},
-    {t:"Presenteei meu marido recém-diagnosticado. Ele, que evitava o assunto, leu em dois dias e me agradeceu chorando.", n:"Beatriz L.", r:"Esposa e leitora", c1:"#86a5cb", c2:"#1d416b"},
-    {t:"Trabalho com educação em diabetes e indico para meus pacientes. Acolhe sem romantizar e informa sem assustar.", n:"Marcos V.", r:"Educador em diabetes", c1:"#5e9ed6", c2:"#2d5a9e"},
-    {t:"Convivo com diabetes desde criança. Foi o primeiro livro em que me senti compreendida de verdade.", n:"Letícia F.", r:"Leitora · Belo Horizonte", c1:"#608abb", c2:"#225087"}
+    {t:"Eu vivia com medo do diagnóstico. Este livro me deu colo e, ao mesmo tempo, um chão firme para recomeçar. Li chorando e terminei sorrindo.", n:"Mariana", r:"Leitora · São Paulo", c1:"#7095c0", c2:"#28548a"},
+    {t:"Minha mãe tem diabetes e eu não sabia como ajudar. A Elaine me ensinou que cuidar também é caminhar ao lado.", n:"Rafael", r:"Filho e cuidador", c1:"#608abb", c2:"#1d416b"},
+    {t:"Finalmente alguém falou da parte que ninguém fala: as emoções. Senti que cada página tinha sido escrita para mim.", n:"Cláudia", r:"11 anos com diabetes", c1:"#86a5cb", c2:"#2d5a9e"},
+    {t:"Leitura leve, honesta e cheia de esperança. Recomendo para todo recém-diagnosticado — e para a família inteira.", n:"Henrique", r:"Endocrinologista", c1:"#5e9ed6", c2:"#225087"},
+    {t:"A frase “você pode ter diabetes, mas a diabetes só terá você se você não se cuidar” virou meu lema de vida.", n:"Patrícia", r:"Leitora · Curitiba", c1:"#608abb", c2:"#16304e"},
+    {t:"Comprei por curiosidade e ganhei uma companheira de jornada. O autocuidado virou hábito, como escovar os dentes.", n:"Júlia", r:"Leitora · Recife", c1:"#7095c0", c2:"#28548a"},
+    {t:"Presenteei meu marido recém-diagnosticado. Ele, que evitava o assunto, leu em dois dias e me agradeceu chorando.", n:"Beatriz", r:"Esposa e leitora", c1:"#86a5cb", c2:"#1d416b"},
+    {t:"Trabalho com educação em diabetes e indico para meus pacientes. Acolhe sem romantizar e informa sem assustar.", n:"Marcos", r:"Educador em diabetes", c1:"#5e9ed6", c2:"#2d5a9e"},
+    {t:"Convivo com diabetes desde criança. Foi o primeiro livro em que me senti compreendida de verdade.", n:"Letícia", r:"Leitora · Belo Horizonte", c1:"#608abb", c2:"#225087"}
   ];
-  var photos=[]; for(var _pi=1; _pi<=12; _pi++) photos.push('assets/img/readers/r'+_pi+'.jpg');
-  photos.push('assets/img/readers/r13.webp');
+  var photos=[]; for(var _pi=1; _pi<=12; _pi++) photos.push('assets/img/readers/r'+_pi+'.webp');
+  
 
   /* ---- PHOTO RING · Leitores ---- */
   (function(){
@@ -1372,12 +1440,12 @@ section{position:relative}
     n.className='vs__node'; n.style.left=p.l+'%'; n.style.top=p.t+'%';
     n.style.width=p.s+'px'; n.style.height=p.s+'px';
     n.dataset.i=i; n.dataset.dx=(p.l-40)/40; n.dataset.dy=(p.t-45)/45;
-    n.innerHTML='<img src="assets/img/launch/'+s.img+'.jpg" alt="'+s.t+'"><span class="tip">'+s.t+'</span>';
+    n.innerHTML='<img src="assets/img/launch/'+s.img+'.webp" alt="'+s.t+'"><span class="tip">'+s.t+'</span>';
     n.addEventListener('click', function(){ vsGo(i); });
     cloud.appendChild(n); nodes.push(n);
     // mobile masonry
     var mi = document.createElement('img');
-    mi.src='assets/img/launch/'+s.img+'.jpg'; mi.alt=s.t; mi.loading='lazy';
+    mi.src='assets/img/launch/'+s.img+'.webp'; mi.alt=s.t; mi.loading='lazy';
     mi.addEventListener('click', function(){ openLB(galleryAll.indexOf(s.img)); });
     mason.appendChild(mi);
   });
@@ -1397,7 +1465,7 @@ section{position:relative}
     }
     pimg.appendChild(nw);
     nw.onload=reveal; nw.onerror=reveal;
-    nw.src='assets/img/launch/full/'+s.img+'.jpg';
+    nw.src='assets/img/launch/full/'+s.img+'.webp';
     if(nw.complete && nw.naturalWidth>0) reveal();
     var cap=$('#vsCap'); cap.classList.remove('show'); void cap.offsetWidth;
     $('#vsKick').textContent='Memória '+('0'+(i+1)).slice(-2);
@@ -1437,7 +1505,7 @@ section{position:relative}
   var gg=$('#gallGrid');
   galleryAll.forEach(function(id, idx){
     var im=document.createElement('img');
-    im.src='assets/img/launch/'+id+'.jpg'; im.alt=capMap[id]||'Foto do lançamento'; im.loading='lazy';
+    im.src='assets/img/launch/'+id+'.webp'; im.alt=capMap[id]||'Foto do lançamento'; im.loading='lazy';
     im.addEventListener('click', function(){ openLB(idx); });
     gg.appendChild(im);
   });
@@ -1449,7 +1517,7 @@ section{position:relative}
   /* ---- LIGHTBOX ---- */
   var lb=$('#lb'), lbImg=$('#lbImg'), lbCap=$('#lbCap'), lbI=0;
   function openLB(i){ lbI=(i+galleryAll.length)%galleryAll.length; var id=galleryAll[lbI];
-    lbImg.src='assets/img/launch/full/'+id+'.jpg';
+    lbImg.src='assets/img/launch/full/'+id+'.webp';
     lbCap.textContent=capMap[id]?capMap[id]+' · noite de lançamento':'Noite de lançamento · Há vida com diabetes';
     lb.classList.add('open'); document.body.style.overflow='hidden';
   }
@@ -1474,16 +1542,13 @@ section{position:relative}
     {q:'Em quanto tempo recebo o exemplar?', a:'Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra.'},
     {q:'Posso presentear alguém?', a:'Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados.'}
   ];
-  var fl=$('#faqList');
-  faqs.forEach(function(f,i){
-    var d=document.createElement('div'); d.className='acc reveal'; if(i<3) d.classList.add('d'+(i+1));
-    d.innerHTML='<button class="acc__q">'+f.q+'<span class="ic"></span></button><div class="acc__a"><p>'+f.a+'</p></div>';
-    fl.appendChild(d); io.observe(d);
+  $$('#faqList .acc').forEach(function(d){
+    io.observe(d);
     var q=d.querySelector('.acc__q'), a=d.querySelector('.acc__a');
     q.addEventListener('click', function(){
       var open=d.classList.contains('open');
-      $$('.acc').forEach(function(x){ x.classList.remove('open'); x.querySelector('.acc__a').style.maxHeight=null; });
-      if(!open){ d.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+      $$('.acc').forEach(function(x){ x.classList.remove('open'); x.querySelector('.acc__a').style.maxHeight=null; x.querySelector('.acc__q').setAttribute('aria-expanded','false'); });
+      if(!open){ d.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; q.setAttribute('aria-expanded','true'); }
     });
   });
 
@@ -1497,9 +1562,10 @@ section{position:relative}
   };
   var co=$('#co'), coForm=$('#coForm');
   if(co && coForm){
-    function openCo(){ co.classList.add('open'); document.body.style.overflow='hidden';
+    var lastFocus=null;
+    function openCo(){ lastFocus=document.activeElement; co.removeAttribute('inert'); co.setAttribute('aria-hidden','false'); co.classList.add('open'); document.body.style.overflow='hidden'; setTimeout(function(){ $('#coX').focus(); },60);
       $('#coStep1').style.display=''; $('#coStep2').style.display='none'; co.querySelector('.co__card').scrollTop=0; }
-    function closeCo(){ co.classList.remove('open'); document.body.style.overflow=''; }
+    function closeCo(){ co.classList.remove('open'); co.setAttribute('inert',''); co.setAttribute('aria-hidden','true'); document.body.style.overflow=''; if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
     $('#coX').addEventListener('click', closeCo);
     co.addEventListener('click', function(e){ if(e.target===co) closeCo(); });
     document.addEventListener('keydown', function(e){ if(e.key==='Escape' && co.classList.contains('open')) closeCo(); });
@@ -1532,14 +1598,15 @@ section{position:relative}
         if(!f.value.trim()){ w.classList.add('err'); ok=false; } else { w.classList.remove('err'); } });
       if(!ok){ return; }
       var d=coForm, nome=d.nome.value.trim();
-      var msg='Olá! Quero garantir meu exemplar de *Há vida com diabetes* ('+CONFIG.preco+').%0A%0A'+
-        '*Nome:* '+nome+'%0A'+
-        '*WhatsApp:* '+d.fone.value.trim()+'%0A'+
-        '*Endereço:* '+d.rua.value.trim()+', '+d.numero.value.trim()+(d.compl.value.trim()?(' - '+d.compl.value.trim()):'')+'%0A'+
-        '*Bairro:* '+d.bairro.value.trim()+'%0A'+
-        '*Cidade/UF:* '+d.cidade.value.trim()+' / '+d.uf.value.trim().toUpperCase()+'%0A'+
-        '*CEP:* '+d.cep.value.trim()+'%0A%0A'+
-        'Vou efetuar o pagamento pelo link. 💙';
+      var E=encodeURIComponent, v=function(f){ return f.value.trim(); };
+      var msg=E('Olá! Quero garantir meu exemplar de *Há vida com diabetes* ('+CONFIG.preco+').\n\n'+
+        '*Nome:* '+nome+'\n'+
+        '*WhatsApp:* '+v(d.fone)+'\n'+
+        '*Endereço:* '+v(d.rua)+', '+v(d.numero)+(v(d.compl)?(' - '+v(d.compl)):'')+'\n'+
+        '*Bairro:* '+v(d.bairro)+'\n'+
+        '*Cidade/UF:* '+v(d.cidade)+' / '+v(d.uf).toUpperCase()+'\n'+
+        '*CEP:* '+v(d.cep)+'\n\n'+
+        'Vou efetuar o pagamento pelo link. 💙');
       $('#coWa').href='https://wa.me/'+CONFIG.whats+'?text='+msg;
       var pay=$('#coPay');
       if(CONFIG.nubankLink){ pay.href=CONFIG.nubankLink; pay.removeAttribute('data-noset'); }
@@ -1553,6 +1620,8 @@ section{position:relative}
     });
   }
 })();
+}, 0); });
+(function(){ var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear(); })();
 </script>
 </body>
 </html>

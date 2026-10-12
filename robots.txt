@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Robôs de IA e de busca liberados (decisão: ser citado por ChatGPT, Claude, Perplexity, Gemini)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://havida-com-diabetes.vercel.app/sitemap.xml

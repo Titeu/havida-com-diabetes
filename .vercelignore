@@ -1,0 +1,5 @@
+docs
+.claude
+_orig
+_patch_auditoria.py
+*.md
