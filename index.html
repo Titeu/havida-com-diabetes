@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/mulish-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/hero-900.webp" imagesrcset="assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" imagesizes="(max-width:900px) 100vw, 58vw" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/hero-640.webp" imagesrcset="assets/img/hero-640.webp 640w, assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" imagesizes="(max-width:900px) 100vw, 58vw" fetchpriority="high">
 <style>
 @font-face {
   font-family: 'Caveat';
@@ -160,7 +160,7 @@ a{color:inherit}
   .nav__social{display:none}
   .nav__links{display:flex;flex-direction:column;align-items:center;gap:2px}
   .nav__burger{display:flex}
-  .nav__menu{position:fixed;inset:0;background:rgba(250,246,236,.97);backdrop-filter:blur(20px);
+  .nav__menu{position:fixed;inset:0;background:rgba(250,246,236,.98);
     z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
     opacity:0;pointer-events:none;transition:opacity .45s var(--ease)}
   .nav.open .nav__menu{opacity:1;pointer-events:auto}
@@ -600,7 +600,7 @@ section{position:relative}
 @media(max-width:560px){.gall-grid{grid-template-columns:repeat(3,1fr)}}
 
 /* lightbox */
-.lb{position:fixed;inset:0;z-index:2000;background:rgba(8,16,26,.94);backdrop-filter:blur(8px);
+.lb{position:fixed;inset:0;z-index:2000;background:rgba(8,16,26,.94);
   display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .4s}
 .lb.open{opacity:1;pointer-events:auto}
 .lb__img{max-width:90vw;max-height:80vh;border-radius:14px;box-shadow:var(--shadow-lg);
@@ -683,7 +683,7 @@ section{position:relative}
 
 /* ============ CHECKOUT / ENTREGA MODAL ============ */
 .co{position:fixed;inset:0;z-index:2100;display:flex;align-items:center;justify-content:center;
-  padding:18px;background:rgba(13,28,46,.74);backdrop-filter:blur(8px);
+  padding:18px;background:rgba(13,28,46,.78);
   opacity:0;pointer-events:none;transition:opacity .4s}
 .co.open{opacity:1;pointer-events:auto}
 .co__card{position:relative;width:min(520px,100%);max-height:92vh;overflow-y:auto;
@@ -845,7 +845,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <!-- ===== 1 · HERO / CAPA ===== -->
 <header class="hero" id="top" data-dot="Início">
   <h1 class="sr-only">Há vida com diabetes — livro de Elaine Rosa, psicóloga e educadora em diabetes</h1>
-  <div class="hero__photo" id="heroPhoto"><img src="assets/img/hero.webp" srcset="assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" sizes="(max-width:900px) 100vw, 58vw" width="1600" height="2068" fetchpriority="high" decoding="async" alt="Mulher de costas contemplando um campo de lavanda ao entardecer"></div>
+  <div class="hero__photo" id="heroPhoto"><img src="assets/img/hero.webp" srcset="assets/img/hero-640.webp 640w, assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" sizes="(max-width:900px) 100vw, 58vw" width="1600" height="2068" fetchpriority="high" decoding="async" alt="Mulher de costas contemplando um campo de lavanda ao entardecer"></div>
   <div class="hero__glow"></div>
   <div class="hero__inner">
     <svg class="hero__logo logo-2t reveal" viewBox="205 722 1620 624" aria-label="Há vida com diabetes"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
