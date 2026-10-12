@@ -23,3 +23,9 @@ Legal: política de privacidade (`privacidade.html`) + aviso LGPD no formulário
 3. (RESOLVIDO: o correto é CRP 06/127648) ~~CRP divergente:~~ anotações antigas dizem 126648; site da psicóloga mostra 06/127648. Confirmar antes de exibir.
 4. Domínio `havidacomdiabetes.com.br`; Search Console + Bing; Google Perfil, se aplicável.
 5. Não foi feito commit/push/deploy: revisar e publicar.
+
+## RESULTADO FINAL (PageSpeed da Google, 12/10/2026 18:22, site no ar)
+Computador: Desempenho 100 · Acessibilidade 100 · Boas práticas 100 · SEO 100 (LCP 0,6 s, TBT 40 ms, CLS 0,002)
+Celular: 86 · 100 · 100 · 100 (LCP 3,6 s, FCP 2,0 s, TBT 0 ms, CLS 0,003)
+Decisões fechadas: depoimentos reais (só primeiro nome); CRP correto 06/127648; preço R$ 39,90 no Pix à vista, cartão R$ 41,65 à vista ou 12x de R$ 3,99; "de R$ 59,00" riscado mantido; domínio havidacomdiabetes.com.br ativo; pagamento pela loja InfinitePay.
+Pendente: enviar sitemap ao Search Console/Bing; renomear a loja `eubella_21_18` no InfinitePay; melhorar celular (86) só se aprovado.
