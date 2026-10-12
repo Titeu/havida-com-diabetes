@@ -925,7 +925,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
             <li><svg><use href="#i-check"/></svg>Envio para todo o Brasil</li>
           </ul>
           <a href="#" class="btn btn--gold btn--lg sale__buy js-buy"><svg><use href="#i-book"/></svg>Garantir meu exemplar</a>
-          <div class="sale__trust"><svg><use href="#i-shield"/></svg>Pagamento 100% seguro · Nubank</div>
+          <div class="sale__trust"><svg><use href="#i-shield"/></svg>Pagamento 100% seguro · InfinitePay</div>
         </div>
       </div>
     </div>
@@ -1554,8 +1554,8 @@ requestAnimationFrame(function(){ setTimeout(function(){
 
   /* ---- CHECKOUT / ENTREGA ---- */
   var CONFIG = {
-    /* 👉 Link de pagamento do Nubank (PIX + cartão à vista ou em até 9x): */
-    nubankLink: "https://checkout.nubank.com.br/Q9hN0IsRElw7fs6",
+    /* 👉 Link da loja InfinitePay (PIX + cartão à vista ou em até 9x): */
+    nubankLink: "https://loja.infinitepay.io/eubella_21_18",
     /* WhatsApp que recebe os pedidos (só números, com DDI 55): */
     whats: "5511996221013",
     preco: "R$ 49,90"
@@ -1616,7 +1616,7 @@ requestAnimationFrame(function(){ setTimeout(function(){
     });
     $('#coPay').addEventListener('click', function(e){
       if(this.getAttribute('data-noset')){ e.preventDefault();
-        alert('O link de pagamento do Nubank ainda não foi configurado.\n\nAbra o index.html e cole o seu link em CONFIG.nubankLink.'); }
+        alert('O link de pagamento ainda não foi configurado.\n\nAbra o index.html e cole o seu link em CONFIG.nubankLink.'); }
     });
   }
 })();

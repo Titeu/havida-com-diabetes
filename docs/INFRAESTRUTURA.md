@@ -7,5 +7,5 @@
 - **Domínio próprio:** `havidacomdiabetes.com.br` ainda NÃO conectado (ao conectar: trocar canonical, og:url, sitemap, robots e llms.txt)
 - **Publicar:** `vercel deploy --prod --yes --scope ha-vida-com-diabetes --cwd "<pasta>"` ou push na `main`
 - **`.vercelignore`:** `docs`, `.claude`, `_orig` e `*.md` não vão ao ar.
-- **Pagamento:** `CONFIG.nubankLink` no `index.html`. Pix do link atual expira; trocar por link reutilizável (InfinitePay) — PENDENTE, usuário vai enviar o link.
+- **Pagamento:** `CONFIG.nubankLink` no `index.html`. Loja InfinitePay https://loja.infinitepay.io/eubella_21_18 (preço na loja: R$ 39,90 — conferir com o site, R$ 49,90).
 - **Pedido:** formulário monta mensagem de WhatsApp (5511996221013) com os dados; sem servidor/banco.
