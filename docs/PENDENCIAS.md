@@ -45,3 +45,4 @@ Auditoria completa (SEO/GEO, desempenho, acessibilidade, LGPD), domínio havidac
 - A equipe agora é "FR AI Creator Studio", URL `fr-ai-creator-studio` (antes ha-vida-com-diabetes). Deploy: `cd /d "C:\Users\ferna\Downloads\AAA Claude\havida-pagina"` e depois `npx vercel deploy --prod --yes --scope fr-ai-creator-studio`.
 - Conferido: havidacomdiabetes.com.br e psicologaalphaville.elainerosapsi.com.br seguem 200; projetos intactos.
 - Pendente: deploy das URLs limpas (commit d195a80); GitHub e Vercel; aviso pós-compra no InfinitePay.
+- Git conectado em 13/10/2026: repositório Titeu/havida-com-diabetes ligado ao projeto na Vercel; cada push na `main` agora publica sozinho (não precisa mais do `npx vercel deploy`).
