@@ -40,3 +40,8 @@ Auditoria completa (SEO/GEO, desempenho, acessibilidade, LGPD), domínio havidac
 - Novas páginas: troca-e-arrependimento.html (7 dias, CDC art. 49), 404.html; FAQ "Posso desistir da compra?"; ano de publicação 2018.
 - Celular: botão "Quero meu livro" visível na primeira tela.
 - Falta (usuário): código de e-mail no GitHub + adicionar repositório; configurar na loja InfinitePay o aviso de "pedido recebido"; decidir Analytics/Pixel (precisa do ID); revisar rua/endereço do vendedor se quiser mostrar.
+
+## 13/10/2026 — equipe Vercel renomeada
+- A equipe agora é "FR AI Creator Studio", URL `fr-ai-creator-studio` (antes ha-vida-com-diabetes). Deploy: `cd /d "C:\Users\ferna\Downloads\AAA Claude\havida-pagina"` e depois `npx vercel deploy --prod --yes --scope fr-ai-creator-studio`.
+- Conferido: havidacomdiabetes.com.br e psicologaalphaville.elainerosapsi.com.br seguem 200; projetos intactos.
+- Pendente: deploy das URLs limpas (commit d195a80); GitHub e Vercel; aviso pós-compra no InfinitePay.
