@@ -760,10 +760,44 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 html{background:var(--cream)}
 body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--ivory) 65%,var(--cream) 100%)}
 .marquee,.author,.testi,.faq{background:transparent}
-.sale{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 120px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 120px),linear-gradient(rgba(14,38,66,.42),rgba(14,38,66,.42)),url("assets/img/azul-borboletas.webp") center/cover no-repeat}
-.gallery{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 120px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 120px),linear-gradient(rgba(14,38,66,.42),rgba(14,38,66,.42)),url("assets/img/azul-borboletas.webp") center/cover no-repeat}
-.foot{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 120px),linear-gradient(rgba(12,32,56,.5),rgba(12,32,56,.5)),url("assets/img/azul-borboletas.webp") center/cover no-repeat}
 .readers{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 140px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 140px),linear-gradient(rgba(222,230,243,.30),rgba(250,246,236,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat}
+/* ---- faixas brancas com borboletas (sem azul) ---- */
+.sale,.gallery,.foot{color:var(--ink)}
+.sale{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.gallery{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.foot{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.sale .kicker,.gallery .kicker{color:var(--blue-500)}
+.sale .kicker::before,.sale .kicker--c::after,.gallery .kicker::before,.gallery .kicker--c::after{background:var(--blue-400)}
+.sale h2,.gallery h2{color:var(--blue-800)}.sale h2 em,.gallery h2 em{color:var(--blue-500)}
+.sale .sec-head p,.gallery .sec-head p{color:var(--ink-soft)}
+.sale__book-img{filter:drop-shadow(0 34px 50px rgba(22,48,78,.30))}
+.sale__halo{background:radial-gradient(circle,rgba(120,160,210,.22),transparent 62%)}
+.pill{background:rgba(255,255,255,.72);border:1px solid var(--blue-200)}
+.pill:hover{background:#fff;border-color:var(--blue-400)}
+.pill svg{color:var(--blue-500)}.pill h3{color:var(--blue-800)}.pill p{color:var(--ink-soft)}
+.sale__offer{color:var(--ink);background:rgba(255,255,255,.92);border:1px solid var(--blue-200);box-shadow:var(--shadow-md)}
+.sale__selo{filter:drop-shadow(0 10px 18px rgba(22,48,78,.22))}
+.sale__offer .sale__price .now{color:var(--blue-800)}.sale__offer .sale__price .cur{color:var(--blue-500)}.sale__offer .sale__price .old{color:#9aa7b5}
+.sale__offer .sale__install{color:var(--ink-soft)}.sale__offer .sale__install b{color:var(--blue-800)}
+.sale__offer .sale__feat li{color:var(--ink)}.sale__offer .sale__feat svg{color:var(--blue-500)}
+.sale__offer .sale__trust{color:var(--ink-soft)}.sale__offer .sale__trust svg{color:var(--blue-400)}
+.sale__details h3{color:var(--blue-800)}.sale__details h3::after{background:var(--blue-200)}
+.sale__details dl>div{border-bottom:1px solid var(--line)}
+.sale__details dt{color:var(--ink-soft)}.sale__details dd{color:var(--ink)}
+.vs{background:rgba(255,255,255,.65);border:1px solid var(--blue-200)}
+.vs__hint{color:var(--blue-500)}.vs__counter{color:var(--ink-soft)}.vs__counter b{color:var(--blue-800)}
+.gall-all__head h3{color:var(--blue-800)}
+.foot__cta .bf{color:var(--blue-400)}.foot__cta h2{color:var(--blue-800)}.foot__cta h2 em{color:var(--blue-500)}
+.foot__cta p{color:var(--ink-soft)}
+.foot__main{border-top:1px solid var(--blue-200)}
+.foot__brand p{color:var(--ink-soft)}
+.foot__col h3{color:var(--blue-800)}
+.foot__col a{color:var(--ink-soft)}.foot__col a:hover{color:var(--blue-800)}
+.foot__contact svg{color:var(--blue-500)}
+.foot__social a{border:1px solid var(--blue-200);color:var(--blue-700)}
+.foot__social a:hover{background:var(--blue-700);color:#fff}
+.foot__col span{display:block;color:var(--ink-soft);font-size:14px;padding:6px 0}
+.foot__bar{border-top:1px solid var(--blue-200);color:var(--ink-soft)}.foot__bar a{color:var(--blue-700)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://havidacomdiabetes.com.br/#site", "url": "https://havidacomdiabetes.com.br/", "name": "Há vida com diabetes", "inLanguage": "pt-BR"}, {"@type": "Person", "@id": "https://havidacomdiabetes.com.br/#autora", "name": "Elaine Rosa", "jobTitle": "Psicóloga e educadora em diabetes", "url": "https://psicologaalphaville.elainerosapsi.com.br/", "sameAs": ["https://instagram.com/havidacomdiabetes", "https://psicologaalphaville.elainerosapsi.com.br/"]}, {"@type": "Book", "@id": "https://havidacomdiabetes.com.br/#livro", "name": "Há vida com diabetes", "author": {"@id": "https://havidacomdiabetes.com.br/#autora"}, "publisher": {"@type": "Organization", "name": "Literare Books International"}, "isbn": "978-85-9455-117-7", "bookFormat": "https://schema.org/Paperback", "inLanguage": "pt-BR", "image": "https://havidacomdiabetes.com.br/assets/img/og-cover.webp", "description": "Um livro sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.", "offers": {"@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://havidacomdiabetes.com.br/#livro"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Para quem é este livro?", "acceptedAnswer": {"@type": "Answer", "text": "Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos."}}, {"@type": "Question", "name": "Preciso ter diabetes para aproveitar a leitura?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional."}}, {"@type": "Question", "name": "O livro substitui o acompanhamento médico?", "acceptedAnswer": {"@type": "Answer", "text": "De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde."}}, {"@type": "Question", "name": "É um livro técnico e difícil?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende."}}, {"@type": "Question", "name": "Em quanto tempo recebo o exemplar?", "acceptedAnswer": {"@type": "Answer", "text": "Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra."}}, {"@type": "Question", "name": "Posso presentear alguém?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados."}}]}]}</script>
 </head>
@@ -1048,7 +1082,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
     <div class="gall-all">
       <div class="gall-all__head">
         <h3>Todas as fotos da noite</h3>
-        <button class="btn btn--ghost" id="seeAll" style="color:#cfe0f0;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.06)">Ver as 76 fotos <svg><use href="#i-down"/></svg></button>
+        <button class="btn btn--ghost" id="seeAll">Ver as 76 fotos <svg><use href="#i-down"/></svg></button>
       </div>
       <div class="gall-grid collapsed" id="gallGrid"></div>
     </div>
@@ -1086,7 +1120,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
     </div>
     <div class="foot__main">
       <div class="foot__brand">
-        <svg class="logo-svg" viewBox="205 722 1620 624" style="color:#cfddec"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
+        <svg class="logo-svg logo-2t" viewBox="205 722 1620 624"><use href="#logo" x="205" y="722" width="1620" height="624"/></svg>
         <p>Um livro de Elaine Rosa sobre acolhimento, autoconhecimento e a coragem de viver bem — apesar do diabetes.</p>
         <div class="foot__social">
           <a href="https://instagram.com/havidacomdiabetes" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
@@ -1308,7 +1342,7 @@ requestAnimationFrame(function(){ setTimeout(function(){
     {t:"Eu vivia com medo do diagnóstico. Este livro me deu colo e, ao mesmo tempo, um chão firme para recomeçar. Li chorando e terminei sorrindo.", n:"Mariana", r:"Leitora · São Paulo", c1:"#7095c0", c2:"#28548a"},
     {t:"Minha mãe tem diabetes e eu não sabia como ajudar. A Elaine me ensinou que cuidar também é caminhar ao lado.", n:"Rafael", r:"Filho e cuidador", c1:"#608abb", c2:"#1d416b"},
     {t:"Finalmente alguém falou da parte que ninguém fala: as emoções. Senti que cada página tinha sido escrita para mim.", n:"Cláudia", r:"11 anos com diabetes", c1:"#86a5cb", c2:"#2d5a9e"},
-    {t:"Leitura leve, honesta e cheia de esperança. Recomendo para todo recém-diagnosticado — e para a família inteira.", n:"Henrique", r:"Endocrinologista", c1:"#5e9ed6", c2:"#225087"},
+    {t:"Leitura leve, honesta e cheia de esperança. Recomendo para todo recém-diagnosticado — e para a família inteira.", n:"Henrique", r:"", c1:"#5e9ed6", c2:"#225087"},
     {t:"A frase “você pode ter diabetes, mas a diabetes só terá você se você não se cuidar” virou meu lema de vida.", n:"Patrícia", r:"Leitora · Curitiba", c1:"#608abb", c2:"#16304e"},
     {t:"Comprei por curiosidade e ganhei uma companheira de jornada. O autocuidado virou hábito, como escovar os dentes.", n:"Júlia", r:"Leitora · Recife", c1:"#7095c0", c2:"#28548a"},
     {t:"Presenteei meu marido recém-diagnosticado. Ele, que evitava o assunto, leu em dois dias e me agradeceu chorando.", n:"Beatriz", r:"Esposa e leitora", c1:"#86a5cb", c2:"#1d416b"},
