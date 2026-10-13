@@ -33,3 +33,10 @@ Auditoria completa (SEO/GEO, desempenho, acessibilidade, LGPD), domínio havidac
 - Search Console (psicologaalphaville.elainerosapsi.com.br): sitemap-index.xml ENVIADO (status inicial "não foi possível buscar", costuma resolver sozinho em algumas horas; conferir).
 - Search Console (havidacomdiabetes.com.br): propriedade de domínio adicionada; registro TXT google-site-verification criado no DNS da Vercel (rec_f65287d759ffa8da94cdc196). FALTA clicar em VERIFICAR no Search Console e depois enviar `sitemap.xml`.
 - GitHub ↔ Vercel: o GitHub pediu confirmação por e-mail (modo sudo) para abrir as configurações do app Vercel; falta o usuário confirmar e adicionar o repositório `havida-com-diabetes`.
+
+## Atualização de 13/10/2026 (noite)
+- Loja InfinitePay nova: https://loja.infinitepay.io/fernando_rosa-vv7 (livro a R$ 39,90). A antiga (eubella_21_18) foi trocada no site.
+- Vendedor no rodapé e nas políticas: 48.952.092 FERNANDO LUIZ ROSA, CNPJ 48.952.092/0001-36, Jandira/SP (dados conferidos na BrasilAPI; o cadastro não traz rua/número).
+- Novas páginas: troca-e-arrependimento.html (7 dias, CDC art. 49), 404.html; FAQ "Posso desistir da compra?"; ano de publicação 2018.
+- Celular: botão "Quero meu livro" visível na primeira tela.
+- Falta (usuário): código de e-mail no GitHub + adicionar repositório; configurar na loja InfinitePay o aviso de "pedido recebido"; decidir Analytics/Pixel (precisa do ID); revisar rua/endereço do vendedor se quiser mostrar.
