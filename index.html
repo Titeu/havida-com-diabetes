@@ -1472,6 +1472,8 @@ requestAnimationFrame(function(){ setTimeout(function(){
   })();
 
   /* ---- VISUAL STORY DATA ---- */
+  // nome do arquivo no padrão GEO: L25 → lancamento-ha-vida-com-diabetes-25.webp
+  function lp(id){ return 'lancamento-ha-vida-com-diabetes-'+id.slice(1)+'.webp'; }
   var stories = [
     {img:'L25', t:'O grande dia', x:'Era uma vez um sonho guardado numa gaveta. Naquela noite, ele ganhou capa, páginas e um lugar no mundo.'},
     {img:'L02', t:'Lado a lado', x:'Ninguém atravessa essa jornada sozinho. Toda conquista cabe melhor quando é dividida.'},
@@ -1503,12 +1505,12 @@ requestAnimationFrame(function(){ setTimeout(function(){
     n.className='vs__node'; n.style.left=p.l+'%'; n.style.top=p.t+'%';
     n.style.width=p.s+'px'; n.style.height=p.s+'px';
     n.dataset.i=i; n.dataset.dx=(p.l-40)/40; n.dataset.dy=(p.t-45)/45;
-    n.innerHTML='<img src="assets/img/launch/'+s.img+'.webp" alt="'+s.t+'"><span class="tip">'+s.t+'</span>';
+    n.innerHTML='<img src="assets/img/launch/'+lp(s.img)+'" alt="'+s.t+'"><span class="tip">'+s.t+'</span>';
     n.addEventListener('click', function(){ vsGo(i); });
     cloud.appendChild(n); nodes.push(n);
     // mobile masonry
     var mi = document.createElement('img');
-    mi.src='assets/img/launch/'+s.img+'.webp'; mi.alt=s.t; mi.loading='lazy';
+    mi.src='assets/img/launch/'+lp(s.img); mi.alt=s.t; mi.loading='lazy';
     mi.addEventListener('click', function(){ openLB(galleryAll.indexOf(s.img)); });
     mason.appendChild(mi);
   });
@@ -1528,7 +1530,7 @@ requestAnimationFrame(function(){ setTimeout(function(){
     }
     pimg.appendChild(nw);
     nw.onload=reveal; nw.onerror=reveal;
-    nw.src='assets/img/launch/full/'+s.img+'.webp';
+    nw.src='assets/img/launch/full/'+lp(s.img);
     if(nw.complete && nw.naturalWidth>0) reveal();
     var cap=$('#vsCap'); cap.classList.remove('show'); void cap.offsetWidth;
     $('#vsKick').textContent='Memória '+('0'+(i+1)).slice(-2);
@@ -1568,7 +1570,7 @@ requestAnimationFrame(function(){ setTimeout(function(){
   var gg=$('#gallGrid');
   galleryAll.forEach(function(id, idx){
     var im=document.createElement('img');
-    im.src='assets/img/launch/'+id+'.webp'; im.alt=capMap[id]||'Foto do lançamento'; im.loading='lazy';
+    im.src='assets/img/launch/'+lp(id); im.alt=capMap[id]||'Foto do lançamento'; im.loading='lazy';
     im.addEventListener('click', function(){ openLB(idx); });
     gg.appendChild(im);
   });
@@ -1580,7 +1582,7 @@ requestAnimationFrame(function(){ setTimeout(function(){
   /* ---- LIGHTBOX ---- */
   var lb=$('#lb'), lbImg=$('#lbImg'), lbCap=$('#lbCap'), lbI=0;
   function openLB(i){ lbI=(i+galleryAll.length)%galleryAll.length; var id=galleryAll[lbI];
-    lbImg.src='assets/img/launch/full/'+id+'.webp';
+    lbImg.src='assets/img/launch/full/'+lp(id);
     lbCap.textContent=capMap[id]?capMap[id]+' · noite de lançamento':'Noite de lançamento · Há vida com diabetes';
     lb.classList.add('open'); document.body.style.overflow='hidden';
   }

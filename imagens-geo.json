@@ -1,0 +1,1544 @@
+{
+  "padrao": {
+    "autores": "Elaine Rosa — Psicóloga | CRP 06/127648 | Especialista em ACT",
+    "direitos": "© Elaine Rosa",
+    "credito": "",
+    "site_direitos": "https://havidacomdiabetes.com.br",
+    "cidade": "",
+    "estado": "",
+    "pais": "Brasil",
+    "marcas_base": [
+      "Elaine Rosa",
+      "Há vida com diabetes"
+    ]
+  },
+  "ignorar": [
+    "favicon*"
+  ],
+  "imagens": [
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-01.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-01.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa posa ao lado de uma convidada de blusa clara, entre as mesas da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa posa ao lado de uma convidada de blusa clara, entre as mesas da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-02.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-02.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa entre duas convidadas diante do painel azul da Livraria Cultura",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa entre duas convidadas diante do painel azul da Livraria Cultura. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Lado a lado",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-03.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-03.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma leitora que segura o livro, junto à mesa de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma leitora que segura o livro, junto à mesa de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-04.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-04.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma leitora de camisa xadrez rosa que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma leitora de camisa xadrez rosa que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-05.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-05.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor de camisa azul-clara que segura o livro recém-autografado",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor de camisa azul-clara que segura o livro recém-autografado. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-06.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-06.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados reunidos na livraria aguardando a sessão de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados reunidos na livraria aguardando a sessão de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-07.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-07.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um exemplar à mesa, cercada por convidados, com o livro em destaque",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um exemplar à mesa, cercada por convidados, com o livro em destaque. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-08.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-08.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma leitora de vestido acinzentado que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma leitora de vestido acinzentado que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Para celebrar",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-09.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-09.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor e uma menina, que mostram o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor e uma menina, que mostram o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-10.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-10.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma convidada de vestido listrado, no espaço da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma convidada de vestido listrado, no espaço da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-11.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-11.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma convidada de vestido amarelo",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma convidada de vestido amarelo. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-12.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-12.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma convidada que carrega um bebê no colo",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma convidada que carrega um bebê no colo. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-13.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-13.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma leitora de blusa preta que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma leitora de blusa preta que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Presença",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-14.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-14.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados conversam na área de autógrafos durante o lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados conversam na área de autógrafos durante o lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-15.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-15.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor de camisa escura que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor de camisa escura que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-16.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-16.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma convidada de blusa rosa",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma convidada de blusa rosa. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-17.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-17.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa sorri à mesa de autógrafos, com o livro exposto à frente",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa sorri à mesa de autógrafos, com o livro exposto à frente. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Em voz alta",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-18.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-18.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa faz uma selfie com uma leitora à mesa de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa faz uma selfie com uma leitora à mesa de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-19.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-19.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um exemplar, com o livro em pé sobre a mesa",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um exemplar, com o livro em pé sobre a mesa. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-20.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-20.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um casal de leitores que mostra o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um casal de leitores que mostra o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-21.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-21.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Duas convidadas posam entre as estantes da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Duas convidadas posam entre as estantes da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-22.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-22.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados circulam pela livraria durante a noite de lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados circulam pela livraria durante a noite de lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-23.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-23.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Fila de convidados no espaço do lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Fila de convidados no espaço do lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-24.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-24.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Duas convidadas sentadas em poltronas vermelhas conversam durante o evento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Duas convidadas sentadas em poltronas vermelhas conversam durante o evento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-25.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-25.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados caminham pelo amplo salão da livraria na noite de lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados caminham pelo amplo salão da livraria na noite de lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "O grande dia",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-26.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-26.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa conversa com convidadas no meio do público",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa conversa com convidadas no meio do público. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-27.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-27.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa, de pé, conversa com convidados na livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa, de pé, conversa com convidados na livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-28.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-28.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados no lançamento, entre eles um homem com uma criança no colo",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados no lançamento, entre eles um homem com uma criança no colo. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-29.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-29.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidado carrega um bebê de camisa xadrez durante o lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidado carrega um bebê de camisa xadrez durante o lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-30.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-30.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor de jaqueta vermelha que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor de jaqueta vermelha que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-31.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-31.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Exemplares do livro Há vida com diabetes expostos no piso da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Exemplares do livro Há vida com diabetes expostos no piso da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-32.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-32.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Totem da Livraria Cultura com o livro Há vida com diabetes em destaque",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Totem da Livraria Cultura com o livro Há vida com diabetes em destaque. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Cada dedicatória",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-33.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-33.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa escreve uma dedicatória à mesa de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa escreve uma dedicatória à mesa de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Palavra por palavra",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-34.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-34.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa, sentada, com um casal de leitores que mostra o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa, sentada, com um casal de leitores que mostra o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-35.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-35.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Mesa de exposição com o livro Há vida com diabetes entre outros títulos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Mesa de exposição com o livro Há vida com diabetes entre outros títulos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-36.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-36.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com convidados que seguram o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com convidados que seguram o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-37.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-37.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um grupo de convidados, entre eles um homem de camisa laranja",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um grupo de convidados, entre eles um homem de camisa laranja. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-38.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-38.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma leitora de vestido listrado",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma leitora de vestido listrado. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-39.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-39.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um grupo de leitoras que mostram o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um grupo de leitoras que mostram o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-40.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-40.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados sorriem para a foto durante o lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados sorriem para a foto durante o lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-41.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-41.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa conversa com um leitor que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa conversa com um leitor que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Encontros",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-42.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-42.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um exemplar enquanto um casal acompanha",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um exemplar enquanto um casal acompanha. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-43.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-43.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma leitora e um leitor de camisa laranja",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma leitora e um leitor de camisa laranja. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-44.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-44.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma leitora que mostra o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma leitora que mostra o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-45.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-45.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa e uma leitora com o livro em mãos, no salão da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa e uma leitora com o livro em mãos, no salão da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-46.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-46.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa conversa com convidados enquanto o fotógrafo registra o evento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa conversa com convidados enquanto o fotógrafo registra o evento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-47.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-47.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor de óculos que mostra o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor de óculos que mostra o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-48.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-48.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um convidado entre as estantes da livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um convidado entre as estantes da livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-49.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-49.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um grupo de três convidados",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um grupo de três convidados. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-50.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-50.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com convidados, entre eles um homem de camisa rosa e outro de jaqueta vermelha",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com convidados, entre eles um homem de camisa rosa e outro de jaqueta vermelha. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-51.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-51.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um livro com uma leitora em primeiro plano",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um livro com uma leitora em primeiro plano. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Sorrisos que ficam",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-52.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-52.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um leitor de paletó preto que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um leitor de paletó preto que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-53.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-53.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidados reunidos em torno das mesas, com um carrinho de bebê",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidados reunidos em torno das mesas, com um carrinho de bebê. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-54.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-54.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma convidada de roupa rosa",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma convidada de roupa rosa. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-55.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-55.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma convidada de calça listrada perto da área de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma convidada de calça listrada perto da área de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-56.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-56.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de um convidado de terno",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de um convidado de terno. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-57.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-57.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com leitores que seguram o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com leitores que seguram o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-58.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-58.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Vista ampla da livraria cheia de convidados na noite de lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Vista ampla da livraria cheia de convidados na noite de lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-59.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-59.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Vista do público na livraria, com convidados sentados na arquibancada",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Vista do público na livraria, com convidados sentados na arquibancada. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-60.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-60.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Família de leitores, com pai, mãe e filha, posa no lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Família de leitores, com pai, mãe e filha, posa no lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Em família",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-61.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-61.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Criança segura o livro Há vida com diabetes no colo de um adulto",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Criança segura o livro Há vida com diabetes no colo de um adulto. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "A próxima geração",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-62.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-62.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa à mesa enquanto leitores aguardam",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa à mesa enquanto leitores aguardam. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-63.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-63.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa, de pé, entre convidados na livraria",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa, de pé, entre convidados na livraria. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-64.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-64.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa sorri à mesa de autógrafos com o livro à frente",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa sorri à mesa de autógrafos com o livro à frente. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-65.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-65.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um exemplar para uma criança",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um exemplar para uma criança. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-66.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-66.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com um grupo de jovens leitores",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com um grupo de jovens leitores. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-67.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-67.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa livros cercada de convidados",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa livros cercada de convidados. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-68.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-68.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa sorri ao lado de uma leitora à mesa de autógrafos",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa sorri ao lado de uma leitora à mesa de autógrafos. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-69.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-69.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa um exemplar para uma leitora",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa um exemplar para uma leitora. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-70.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-70.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Leitoras com o livro em mãos enquanto Elaine Rosa autografa",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitoras com o livro em mãos enquanto Elaine Rosa autografa. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Levando para casa",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-71.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-71.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Convidadas fazem uma selfie com Elaine Rosa",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Convidadas fazem uma selfie com Elaine Rosa. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-72.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-72.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa sorri com dois meninos no colo",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa sorri com dois meninos no colo. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Heranças de afeto",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-73.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-73.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa ao lado de uma convidada de blusa vinho",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa ao lado de uma convidada de blusa vinho. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-74.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-74.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa autografa enquanto uma convidada consulta o celular",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa autografa enquanto uma convidada consulta o celular. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-75.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-75.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa abraça uma convidada durante o lançamento",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa abraça uma convidada durante o lançamento. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "O abraço",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/launch/lancamento-ha-vida-com-diabetes-76.*",
+        "assets/img/launch/full/lancamento-ha-vida-com-diabetes-76.*"
+      ],
+      "titulo": "Lançamento de Há vida com diabetes: Elaine Rosa com uma leitora de blusa vermelha que segura o livro",
+      "assunto": "lançamento de livro; noite de autógrafos; Há vida com diabetes; Livraria Cultura",
+      "marcas": [
+        "Livraria Cultura",
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Elaine Rosa com uma leitora de blusa vermelha que segura o livro. Registro da noite de lançamento do livro Há vida com diabetes, de Elaine Rosa, na Livraria Cultura.",
+      "alt": "Foto do lançamento",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/author.*"
+      ],
+      "titulo": "Elaine Rosa, autora de Há vida com diabetes, na mesa de autógrafos",
+      "assunto": "Elaine Rosa; autora; psicóloga; Há vida com diabetes",
+      "marcas": [
+        "Psicologia clínica",
+        "Livraria Cultura"
+      ],
+      "comentarios": "Elaine Rosa, psicóloga e autora, sorri sentada à mesa de autógrafos com um exemplar de Há vida com diabetes à frente, durante o lançamento do livro na Livraria Cultura.",
+      "alt": "Elaine Rosa, autora de Há vida com diabetes",
+      "origem": "foto"
+    },
+    {
+      "arquivos": [
+        "assets/img/comunidade-bg.*"
+      ],
+      "titulo": "Elaine Rosa olhando através de um anel de vidro",
+      "assunto": "Elaine Rosa; autora; Há vida com diabetes; comunidade",
+      "marcas": [
+        "Psicologia clínica"
+      ],
+      "comentarios": "Elaine Rosa, de óculos, olha através de um anel de vidro transparente sobre fundo azul-claro. A imagem ilustra a área de comunidade da página do livro Há vida com diabetes.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r13.*"
+      ],
+      "titulo": "Retrato de Elaine Rosa com anel de vidro",
+      "assunto": "Elaine Rosa; autora; psicóloga",
+      "marcas": [
+        "Psicologia clínica"
+      ],
+      "comentarios": "Retrato de Elaine Rosa, de óculos e blazer azul-marinho, segurando um anel de vidro diante do rosto, sobre fundo azul-claro.",
+      "alt": "Elaine Rosa, autora de Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/og-cover.*"
+      ],
+      "titulo": "Há vida com diabetes, livro de Elaine Rosa",
+      "assunto": "livro; Há vida com diabetes; Elaine Rosa; diabetes e saúde mental",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Imagem de compartilhamento da página do livro: título Há vida com diabetes, a capa do livro e Elaine Rosa olhando através de um anel de vidro, sobre fundo azul-claro.",
+      "alt": "Há vida com diabetes, livro de Elaine Rosa"
+    },
+    {
+      "arquivos": [
+        "assets/img/capa-front*",
+        "assets/img/_orig/capa-front.*"
+      ],
+      "titulo": "Capa do livro Há vida com diabetes, de Elaine Rosa",
+      "assunto": "capa de livro; Há vida com diabetes; diabetes; saúde mental",
+      "marcas": [
+        "Educação em Diabetes",
+        "Literare Books International"
+      ],
+      "comentarios": "Capa do livro Há vida com diabetes, de Elaine Rosa: fundo claro com uma borboleta-monarca e o subtítulo sobre construir uma vida saudável, com novas expectativas, outros hábitos, boa saúde mental e muitos motivos para sorrir.",
+      "alt": "Capa do livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/cover-flat.*"
+      ],
+      "titulo": "Capa do livro Há vida com diabetes, em vista frontal",
+      "assunto": "capa de livro; Há vida com diabetes",
+      "marcas": [
+        "Educação em Diabetes",
+        "Literare Books International"
+      ],
+      "comentarios": "Vista frontal da capa. Capa do livro Há vida com diabetes, de Elaine Rosa: fundo claro com uma borboleta-monarca e o subtítulo sobre construir uma vida saudável, com novas expectativas, outros hábitos, boa saúde mental e muitos motivos para sorrir.",
+      "alt": "Capa do livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/contracapa.*",
+        "assets/img/_orig/contracapa.*"
+      ],
+      "titulo": "Contracapa do livro Há vida com diabetes",
+      "assunto": "contracapa; Há vida com diabetes; sinopse",
+      "marcas": [
+        "Educação em Diabetes",
+        "Literare Books International"
+      ],
+      "comentarios": "Contracapa do livro Há vida com diabetes, com a sinopse sobre a jornada da autora com o diabetes e a citação: a maneira como o diabético se vê terá grande influência nos resultados do cuidado com a doença.",
+      "alt": "Contracapa do livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/book.*"
+      ],
+      "titulo": "Livro Há vida com diabetes em perspectiva 3D",
+      "assunto": "livro; Há vida com diabetes",
+      "marcas": [
+        "Educação em Diabetes",
+        "Literare Books International"
+      ],
+      "comentarios": "Livro Há vida com diabetes, de Elaine Rosa, em perspectiva 3D, com lombada azul e capa clara com borboleta.",
+      "alt": "Livro Há vida com diabetes, de Elaine Rosa"
+    },
+    {
+      "arquivos": [
+        "assets/img/livro-sem-fundo*"
+      ],
+      "titulo": "Livro Há vida com diabetes, de Elaine Rosa, sem fundo",
+      "assunto": "livro; Há vida com diabetes; diabetes e saúde mental",
+      "marcas": [
+        "Educação em Diabetes",
+        "Literare Books International"
+      ],
+      "comentarios": "Livro Há vida com diabetes em perspectiva, sobre fundo transparente. Obra de Elaine Rosa sobre saúde mental, novos hábitos e qualidade de vida para pessoas com diabetes.",
+      "alt": "Livro Há vida com diabetes, de Elaine Rosa"
+    },
+    {
+      "arquivos": [
+        "assets/img/hero*"
+      ],
+      "titulo": "Mulher de costas contemplando um campo de lavanda ao entardecer",
+      "assunto": "esperança; recomeço; qualidade de vida; Há vida com diabetes",
+      "marcas": [],
+      "comentarios": "Mulher de cabelo preso e vestido florido, de costas, contempla um campo de lavanda ao entardecer. A cena abre a página do livro Há vida com diabetes e evoca recomeço e esperança.",
+      "alt": "Mulher de costas contemplando um campo de lavanda ao entardecer"
+    },
+    {
+      "arquivos": [
+        "assets/img/field-woman.*"
+      ],
+      "titulo": "Mulher em um campo dourado ao pôr do sol",
+      "assunto": "liberdade; bem-estar; qualidade de vida",
+      "marcas": [],
+      "comentarios": "Mulher de braços abertos em um campo de trigo dourado ao pôr do sol. Imagem que acompanha a página de venda do livro Há vida com diabetes, de Elaine Rosa, sobre saúde mental, novos hábitos e qualidade de vida para pessoas com diabetes.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/rear-woman.*"
+      ],
+      "titulo": "Mulher de costas diante do pôr do sol",
+      "assunto": "reflexão; esperança; recomeço",
+      "marcas": [],
+      "comentarios": "Silhueta de uma mulher de costas contemplando o pôr do sol sobre um campo. Imagem que acompanha a página de venda do livro Há vida com diabetes, de Elaine Rosa, sobre saúde mental, novos hábitos e qualidade de vida para pessoas com diabetes.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/model-cutout.*"
+      ],
+      "titulo": "Recorte de mulher de costas com cabelo preso",
+      "assunto": "elemento gráfico; recomeço",
+      "marcas": [],
+      "comentarios": "Recorte de uma mulher de costas, com cabelo preso e fios soltos, sobre fundo transparente. Imagem que acompanha a página de venda do livro Há vida com diabetes, de Elaine Rosa, sobre saúde mental, novos hábitos e qualidade de vida para pessoas com diabetes.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r1.*"
+      ],
+      "titulo": "Leitora escreve à mesa junto à janela, com o livro Há vida com diabetes e uma xícara de café",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora escreve à mesa junto à janela, com o livro Há vida com diabetes e uma xícara de café. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r2.*"
+      ],
+      "titulo": "Leitora sorridente mostra o livro Há vida com diabetes",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora sorridente mostra o livro Há vida com diabetes. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r3.*"
+      ],
+      "titulo": "Leitora deitada cobre o rosto com o livro Há vida com diabetes",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora deitada cobre o rosto com o livro Há vida com diabetes. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r4.*"
+      ],
+      "titulo": "Leitora lê o livro Há vida com diabetes diante de uma estante",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora lê o livro Há vida com diabetes diante de uma estante. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r5.*"
+      ],
+      "titulo": "Mãos seguram o livro aberto em uma página com o texto Cuide-se",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Mãos seguram o livro aberto em uma página com o texto Cuide-se. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r6.*"
+      ],
+      "titulo": "Leitora de blusa vinho lê o livro Há vida com diabetes",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora de blusa vinho lê o livro Há vida com diabetes. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r7.*"
+      ],
+      "titulo": "Livro Há vida com diabetes no chão, ao lado de uma xícara de café e das pernas de uma leitora",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Livro Há vida com diabetes no chão, ao lado de uma xícara de café e das pernas de uma leitora. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r8.*"
+      ],
+      "titulo": "Leitora de blazer rosa estende o livro Há vida com diabetes em direção à câmera",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Leitora de blazer rosa estende o livro Há vida com diabetes em direção à câmera. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r9.*"
+      ],
+      "titulo": "Vista de cima de um livro aberto, óculos e uma xícara de café no colo de uma leitora",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Vista de cima de um livro aberto, óculos e uma xícara de café no colo de uma leitora. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r10.*"
+      ],
+      "titulo": "Livro Há vida com diabetes com óculos sobre uma poltrona de couro",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Livro Há vida com diabetes com óculos sobre uma poltrona de couro. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r11.*"
+      ],
+      "titulo": "Livro Há vida com diabetes sobre mesa de mármore, ao lado de flores e caneta",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Livro Há vida com diabetes sobre mesa de mármore, ao lado de flores e caneta. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/readers/r12.*"
+      ],
+      "titulo": "Livro Há vida com diabetes apoiado no braço de um sofá de couro",
+      "assunto": "leitores; Há vida com diabetes; leitura; autocuidado",
+      "marcas": [
+        "Educação em Diabetes"
+      ],
+      "comentarios": "Livro Há vida com diabetes apoiado no braço de um sofá de couro. Imagem da galeria de leitores da página do livro de Elaine Rosa sobre saúde mental e qualidade de vida com diabetes.",
+      "alt": "Leitor com o livro Há vida com diabetes"
+    },
+    {
+      "arquivos": [
+        "assets/img/butterfly*"
+      ],
+      "titulo": "Borboleta-monarca, símbolo do livro Há vida com diabetes",
+      "assunto": "borboleta; transformação; símbolo",
+      "marcas": [],
+      "comentarios": "Ilustração de uma borboleta-monarca laranja e preta com fundo transparente, símbolo de transformação usado na capa e na página do livro Há vida com diabetes.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/azul-borboletas.*"
+      ],
+      "titulo": "Textura azul com borboletas em relevo",
+      "assunto": "textura; fundo; borboletas; elemento gráfico",
+      "marcas": [],
+      "comentarios": "Textura azul com borboletas em relevo, usada como fundo decorativo da página do livro Há vida com diabetes. Não representa pessoas nem lugares.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/branco-borboletas.*"
+      ],
+      "titulo": "Textura branca com borboletas em relevo",
+      "assunto": "textura; fundo; borboletas; elemento gráfico",
+      "marcas": [],
+      "comentarios": "Textura branca com borboletas em relevo, usada como fundo decorativo da página do livro Há vida com diabetes. Não representa pessoas nem lugares.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/textura-borboletas.*"
+      ],
+      "titulo": "Textura com borboletas de papel brancas",
+      "assunto": "textura; fundo; borboletas; elemento gráfico",
+      "marcas": [],
+      "comentarios": "Textura com borboletas de papel brancas, usada como fundo decorativo da página do livro Há vida com diabetes. Não representa pessoas nem lugares.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/textura-portrait.*",
+        "assets/img/textura-wide.*"
+      ],
+      "titulo": "Textura clara com borboletas em relevo",
+      "assunto": "textura; fundo; borboletas; elemento gráfico",
+      "marcas": [],
+      "comentarios": "Textura clara com borboletas em relevo, usada como fundo decorativo da página do livro Há vida com diabetes. Não representa pessoas nem lugares.",
+      "alt": "",
+      "decorativa": true
+    },
+    {
+      "arquivos": [
+        "assets/img/selo-frete*"
+      ],
+      "titulo": "Selo de frete gratuito para todo o Estado de São Paulo",
+      "assunto": "frete grátis; compra do livro; Estado de São Paulo",
+      "marcas": [
+        "São Paulo"
+      ],
+      "comentarios": "Selo azul com o texto Frete gratuito para todo o Estado de São Paulo, que informa a condição de entrega na compra do livro Há vida com diabetes.",
+      "alt": "Frete gratuito para todo o Estado de São Paulo"
+    },
+    {
+      "arquivos": [
+        "assets/img/apple-touch-icon.*"
+      ],
+      "titulo": "Ícone da página Há vida com diabetes",
+      "assunto": "ícone; borboleta; Há vida com diabetes",
+      "marcas": [],
+      "comentarios": "Ícone com uma borboleta azul-clara sobre fundo azul-marinho, usado como atalho da página do livro Há vida com diabetes em celulares.",
+      "alt": "",
+      "decorativa": true
+    }
+  ]
+}
