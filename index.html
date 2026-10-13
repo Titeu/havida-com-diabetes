@@ -27,6 +27,7 @@
 <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/mulish-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="assets/img/hero-640.webp" imagesrcset="assets/img/hero-640.webp 640w, assets/img/hero-900.webp 900w, assets/img/hero.webp 1600w" imagesizes="(max-width:900px) 100vw, 58vw" fetchpriority="high">
 <style>
@@ -798,6 +799,11 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
 .foot__social a:hover{background:var(--blue-700);color:#fff}
 .foot__col span{display:block;color:var(--ink-soft);font-size:14px;padding:6px 0}
 .foot__bar{border-top:1px solid var(--blue-200);color:var(--ink-soft)}.foot__bar a{color:var(--blue-700)}
+/* ---- hero aparece por CSS (sem esperar o JavaScript) ---- */
+@keyframes heroIn{to{opacity:1;transform:none}}
+.hero .reveal{opacity:0;transform:translateY(22px);animation:heroIn .9s var(--ease-out) .05s forwards}
+.hero .reveal.d1{animation-delay:.12s}.hero .reveal.d2{animation-delay:.2s}.hero .reveal.d3{animation-delay:.28s}
+@media (prefers-reduced-motion:reduce){.hero .reveal{animation:none;opacity:1;transform:none}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://havidacomdiabetes.com.br/#site", "url": "https://havidacomdiabetes.com.br/", "name": "Há vida com diabetes", "inLanguage": "pt-BR"}, {"@type": "Person", "@id": "https://havidacomdiabetes.com.br/#autora", "name": "Elaine Rosa", "jobTitle": "Psicóloga e educadora em diabetes", "url": "https://psicologaalphaville.elainerosapsi.com.br/", "sameAs": ["https://instagram.com/havidacomdiabetes", "https://psicologaalphaville.elainerosapsi.com.br/"]}, {"@type": "Book", "@id": "https://havidacomdiabetes.com.br/#livro", "name": "Há vida com diabetes", "author": {"@id": "https://havidacomdiabetes.com.br/#autora"}, "publisher": {"@type": "Organization", "name": "Literare Books International"}, "isbn": "978-85-9455-117-7", "bookFormat": "https://schema.org/Paperback", "inLanguage": "pt-BR", "image": "https://havidacomdiabetes.com.br/assets/img/og-cover.webp", "description": "Um livro sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.", "offers": {"@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://havidacomdiabetes.com.br/#livro"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Para quem é este livro?", "acceptedAnswer": {"@type": "Answer", "text": "Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos."}}, {"@type": "Question", "name": "Preciso ter diabetes para aproveitar a leitura?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional."}}, {"@type": "Question", "name": "O livro substitui o acompanhamento médico?", "acceptedAnswer": {"@type": "Answer", "text": "De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde."}}, {"@type": "Question", "name": "É um livro técnico e difícil?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende."}}, {"@type": "Question", "name": "Em quanto tempo recebo o exemplar?", "acceptedAnswer": {"@type": "Answer", "text": "Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra."}}, {"@type": "Question", "name": "Posso presentear alguém?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados."}}]}]}</script>
 </head>
@@ -928,7 +934,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
       <div class="sale__left reveal">
         <div class="sale__halo"></div>
         <div class="sale__book" id="saleBook">
-          <img src="assets/img/livro-sem-fundo-420.webp" srcset="assets/img/livro-sem-fundo-420.webp 420w, assets/img/livro-sem-fundo.webp 792w" sizes="(max-width:900px) 80vw, 460px" width="792" height="908" loading="lazy" decoding="async" alt="Livro Há vida com diabetes, de Elaine Rosa" class="sale__book-img">
+          <img src="assets/img/livro-sem-fundo-420.webp" srcset="assets/img/livro-sem-fundo-420.webp 420w, assets/img/livro-sem-fundo-600.webp 600w, assets/img/livro-sem-fundo.webp 792w" sizes="(max-width:900px) 80vw, 420px" width="792" height="908" loading="lazy" decoding="async" alt="Livro Há vida com diabetes, de Elaine Rosa" class="sale__book-img">
         </div>
         <div class="sale__details">
           <h3>Detalhes do produto</h3>
@@ -956,7 +962,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
         </div>
 
         <div class="sale__offer reveal d2">
-          <img src="assets/img/selo-frete.webp" width="440" height="299" loading="lazy" decoding="async" alt="Frete gratuito para todo o Estado de São Paulo" class="sale__selo">
+          <img src="assets/img/selo-frete-360.webp" srcset="assets/img/selo-frete-360.webp 360w, assets/img/selo-frete.webp 440w" sizes="(max-width:860px) 66vw, 220px" width="440" height="299" loading="lazy" decoding="async" alt="Frete gratuito para todo o Estado de São Paulo" class="sale__selo">
           <div class="sale__price">
             <span class="cur">R$</span><span class="now">39,90</span>
             <span class="old">R$ 59,00</span>
@@ -1167,7 +1173,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
       <h3 id="coTitle">Para onde enviamos seu livro?</h3>
       <p class="co__sub">Preencha seu endereço de entrega. Em seguida você paga <b>R$ 39,90 no Pix à vista</b> ou no <b>cartão em até 12x de R$ 3,99</b> (com acréscimo da operadora).</p>
       <div class="co__summary">
-        <div class="ci"><img src="assets/img/capa-front.webp" width="727" height="1000" loading="lazy" alt="Capa do livro Há vida com diabetes">
+        <div class="ci"><img src="assets/img/capa-front-130.webp" width="130" height="179" loading="lazy" decoding="async" alt="Capa do livro Há vida com diabetes">
           <div><b>Há vida com diabetes</b><small>por Elaine Rosa</small></div></div>
         <span class="cp">R$ 39,90</span>
       </div>
