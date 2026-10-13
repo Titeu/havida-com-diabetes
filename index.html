@@ -7,7 +7,7 @@
 <meta name="description" content="Há vida com diabetes: livro de Elaine Rosa, psicóloga e educadora em diabetes, sobre acolhimento e autoconhecimento. Edição impressa, R$ 39,90, frete grátis em SP.">
 <link rel="canonical" href="https://havidacomdiabetes.com.br/">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#faf6ec">
+<meta name="theme-color" content="#ffffff">
 <!-- Open Graph / WhatsApp / redes sociais -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://havidacomdiabetes.com.br/">
@@ -77,7 +77,7 @@
   --blue-600:#2d5a9e; --blue-500:#608abb; --blue-400:#7095c0;
   --blue-300:#86a5cb; --blue-200:#b7cae2; --blue-100:#dde7f3; --blue-50:#eef3fa;
   --logo-1:#2d5a9e; --logo-2:#5e9ed6;
-  --cream:#faf6ec; --cream-deep:#f1e7d3; --ivory:#fffdf8; --paper:#f7f1e2;
+  --cream:#ffffff; --cream-deep:#f1e7d3; --ivory:#ffffff; --paper:#ffffff;
   --lav:#efe7f4; --lav-deep:#e3d7ee;
   --line:#dce4ef;
   --shadow-sm:0 2px 10px rgba(34,80,135,.08);
@@ -135,7 +135,7 @@ a{color:inherit}
 .nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;
   justify-content:space-between;padding:20px clamp(18px,4vw,52px);
   transition:background .5s,backdrop-filter .5s,padding .5s,box-shadow .5s;}
-.nav.scrolled{background:rgba(250,246,236,.82);backdrop-filter:blur(16px) saturate(1.1);
+.nav.scrolled{background:rgba(255,255,255,.82);backdrop-filter:blur(16px) saturate(1.1);
   box-shadow:0 1px 0 rgba(230,220,198,.9);padding:13px clamp(18px,4vw,52px)}
 .nav__brand{display:flex;align-items:center;gap:12px;cursor:pointer}
 .nav__brand .logo-svg{width:138px;height:auto}
@@ -161,7 +161,7 @@ a{color:inherit}
   .nav__social{display:none}
   .nav__links{display:flex;flex-direction:column;align-items:center;gap:2px}
   .nav__burger{display:flex}
-  .nav__menu{position:fixed;inset:0;background:rgba(250,246,236,.98);
+  .nav__menu{position:fixed;inset:0;background:rgba(255,255,255,.98);
     z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
     opacity:0;pointer-events:none;transition:opacity .45s var(--ease)}
   .nav.open .nav__menu{opacity:1;pointer-events:auto}
@@ -222,7 +222,7 @@ section{position:relative}
 .hero__photo img{width:100%;height:100%;object-fit:cover;object-position:60% 35%;
   transform:scale(1.06);transition:transform .6s var(--ease)}
 .hero__photo::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(250,246,236,.10),transparent 30%,rgba(247,241,226,.18))}
+  background:linear-gradient(180deg,rgba(255,255,255,.10),transparent 30%,rgba(247,241,226,.18))}
 .hero__glow{position:absolute;top:-12%;right:6%;width:560px;height:560px;border-radius:50%;z-index:1;
   background:radial-gradient(circle,rgba(255,243,214,.85),rgba(255,243,214,0) 66%);
   filter:blur(6px);pointer-events:none;animation:breathe 9s ease-in-out infinite}
@@ -479,7 +479,7 @@ section{position:relative}
 @media(max-width:560px){.t3d{height:clamp(400px,116vw,470px);perspective:1200px}}
 
 /* ---- LEITORES (photo ring) ---- */
-.readers{background:linear-gradient(rgba(222,230,243,.30),rgba(250,246,236,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat;
+.readers{background:linear-gradient(rgba(222,230,243,.30),rgba(255,255,255,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat;
   overflow:hidden}
 /* Padding-top maior para o carrossel não invadir a seção anterior */
 .readers.pad{padding-top:clamp(100px,14vw,180px)}
@@ -761,12 +761,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 html{background:var(--cream)}
 body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--ivory) 65%,var(--cream) 100%)}
 .marquee,.author,.testi,.faq{background:transparent}
-.readers{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 140px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 140px),linear-gradient(rgba(222,230,243,.30),rgba(250,246,236,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat}
+.readers{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.9) 230px,rgba(255,255,255,0) 430px),linear-gradient(0deg,var(--cream),rgba(255,255,255,0) 140px),linear-gradient(rgba(222,230,243,.30),rgba(255,255,255,.34)),url("assets/img/comunidade-bg.webp") center/cover no-repeat}
 /* ---- faixas brancas com borboletas (sem azul) ---- */
 .sale,.gallery,.foot{color:var(--ink)}
-.sale{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
-.gallery{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),linear-gradient(0deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
-.foot{background:linear-gradient(180deg,var(--cream),rgba(250,246,236,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.sale{background:linear-gradient(180deg,var(--cream),rgba(255,255,255,0) 110px),linear-gradient(0deg,var(--cream),rgba(255,255,255,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.gallery{background:linear-gradient(180deg,var(--cream),rgba(255,255,255,0) 110px),linear-gradient(0deg,var(--cream),rgba(255,255,255,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
+.foot{background:linear-gradient(180deg,var(--cream),rgba(255,255,255,0) 110px),url("assets/img/branco-borboletas.webp") center/cover no-repeat}
 .sale .kicker,.gallery .kicker{color:var(--blue-500)}
 .sale .kicker::before,.sale .kicker--c::after,.gallery .kicker::before,.gallery .kicker--c::after{background:var(--blue-400)}
 .sale h2,.gallery h2{color:var(--blue-800)}.sale h2 em,.gallery h2 em{color:var(--blue-500)}
@@ -1006,7 +1006,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
           <p class="reveal d3">Este livro nasceu para compartilhar essa mensagem. Se você recebeu um diagnóstico recente, convive com o diabetes há anos ou cuida de alguém que vive essa realidade, quero que saiba: <span class="hl">Você não está sozinho.</span></p>
         </div>
         <div class="author__creds reveal d4">
-          <span>Psicóloga · CRP 126648</span>
+          <span>Psicóloga · CRP 06/127648</span>
           <span>Pós-graduada em Educação em Diabetes (ANBED)</span>
           <span>Professional Coach (SBC)</span>
         </div>
