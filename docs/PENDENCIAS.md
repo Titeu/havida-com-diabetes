@@ -27,3 +27,9 @@ Auditoria completa (SEO/GEO, desempenho, acessibilidade, LGPD), domínio havidac
 - Feito: cartão do Henrique sem "Endocrinologista"; faixas azuis viraram brancas com borboletas suaves; animações 3D (livro e carrossel de leitores) só rodam quando visíveis (reduz TBT).
 - Git ↔ Vercel: ainda falha (Vercel sem acesso ao repositório). Precisa autorizar no GitHub (Settings → Applications → Vercel → Configure → adicionar `havida-com-diabetes`).
 - Link da loja InfinitePay: aguardando o novo nome.
+
+## Atualização de 13/10/2026 (tarde)
+- Deploy feito: fundo todo branco, CRP 06/127648 corrigido, imagens menores no celular.
+- Search Console (psicologaalphaville.elainerosapsi.com.br): sitemap-index.xml ENVIADO (status inicial "não foi possível buscar", costuma resolver sozinho em algumas horas; conferir).
+- Search Console (havidacomdiabetes.com.br): propriedade de domínio adicionada; registro TXT google-site-verification criado no DNS da Vercel (rec_f65287d759ffa8da94cdc196). FALTA clicar em VERIFICAR no Search Console e depois enviar `sitemap.xml`.
+- GitHub ↔ Vercel: o GitHub pediu confirmação por e-mail (modo sudo) para abrir as configurações do app Vercel; falta o usuário confirmar e adicionar o repositório `havida-com-diabetes`.
