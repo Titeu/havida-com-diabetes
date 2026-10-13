@@ -21,3 +21,9 @@ Auditoria completa (SEO/GEO, desempenho, acessibilidade, LGPD), domínio havidac
 - [ ] Ajustar a intensidade das borboletas / transições, se pedido.
 - [ ] Opcional: teste mensal de GEO (perguntar a ChatGPT/Perplexity/Gemini sobre o livro) e Google Perfil da Empresa, se aplicável.
 - [ ] Opcional: depoimentos sem o campo de cargo "Endocrinologista" se quiser só primeiro nome; confirmar se Facebook/YouTube existem para reativar os ícones.
+
+## Atualização de 13/10/2026
+- PageSpeed (Google, 13/10 08:45, antes do último deploy): computador 84 (TBT 370 ms) · celular 89 (FCP 2,0 s, LCP 3,5 s) · demais notas 100.
+- Feito: cartão do Henrique sem "Endocrinologista"; faixas azuis viraram brancas com borboletas suaves; animações 3D (livro e carrossel de leitores) só rodam quando visíveis (reduz TBT).
+- Git ↔ Vercel: ainda falha (Vercel sem acesso ao repositório). Precisa autorizar no GitHub (Settings → Applications → Vercel → Configure → adicionar `havida-com-diabetes`).
+- Link da loja InfinitePay: aguardando o novo nome.

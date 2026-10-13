@@ -1273,9 +1273,14 @@ requestAnimationFrame(function(){ setTimeout(function(){
         else if(!hover){ angle+=AUTO; }
       }
       inner.style.transform='rotateY('+angle+'deg)';
-      requestAnimationFrame(frame);
+      if(vis){ requestAnimationFrame(frame); } else { running=false; }
     }
-    if(reduce){ inner.style.transform='rotateY(-26deg)'; } else { frame(); }
+    var vis=true, running=false;
+    function startFrame(){ if(!running){ running=true; frame(); } }
+    if(reduce){ inner.style.transform='rotateY(-26deg)'; } else {
+      startFrame();
+      if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ vis=es[0].isIntersecting; if(vis) startFrame(); }).observe(book); }
+    }
     book.addEventListener('pointerdown', function(e){
       dragging=true; sx=e.clientX; sa=angle; lx=e.clientX; vel=0; book.classList.add('grabbing');
       if(book.setPointerCapture){ try{ book.setPointerCapture(e.pointerId); }catch(_){ } }
@@ -1380,8 +1385,13 @@ requestAnimationFrame(function(){ setTimeout(function(){
       }
       ring.style.transform='rotateY('+angle+'deg)';
     }
-    function loop(){ if(!dragging){ if(Math.abs(vel)>0.04){angle+=vel;vel*=0.94;} else if(!paused){angle+=AUTO;} } render(); requestAnimationFrame(loop); }
-    if(reduce){ render(); } else { loop(); }
+    function loop(){ if(!dragging){ if(Math.abs(vel)>0.04){angle+=vel;vel*=0.94;} else if(!paused){angle+=AUTO;} } render(); if(vis){ requestAnimationFrame(loop); } else { running=false; } }
+    var vis=true, running=false;
+    function startLoop(){ if(!running){ running=true; loop(); } }
+    if(reduce){ render(); } else {
+      startLoop();
+      if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ vis=es[0].isIntersecting; if(vis) startLoop(); }).observe(wrap); }
+    }
     function down(x){ dragging=true; sx=x; sa=angle; lx=x; vel=0; stage.classList.add('grabbing'); }
     function mv(x){ if(!dragging)return; angle=sa+(x-sx)*SENS; vel=(x-lx)*SENS; lx=x; }
     function up(){ if(dragging){ dragging=false; stage.classList.remove('grabbing'); } }
