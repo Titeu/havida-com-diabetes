@@ -523,6 +523,26 @@ def pagina_indice(todos):
     return h
 
 
+
+def secao_index(todos):
+    cards = "".join(
+        f'<a class="espaco__card reveal d{i}" href="/blog/{p["slug"]}"><div class="espaco__img"><img src="assets/img/blog/{p["img"]}-480.webp" srcset="assets/img/blog/{p["img"]}-480.webp 480w, assets/img/blog/{p["img"]}-900.webp 900w" sizes="(max-width:900px) 100vw, 380px" width="480" height="320" loading="lazy" decoding="async" alt="{html.escape(p["alt"])}"></div>'
+        f'<div class="espaco__body"><span class="espaco__cat">{esc(p["cat"])}</span><h3>{esc(p["art"]["titulo"])}</h3><p>{esc(p["art"]["sub"])}</p><span class="espaco__more">Ler o artigo →</span></div></a>'
+        for i, p in enumerate(todos[:3], 1))
+    return f'''<!-- BLOG:START -->
+<section class="espaco pad" id="espaco-saude" data-dot="Espaço Saúde">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker kicker--c reveal">{BLOG_NAME}</span>
+      <h2 class="reveal d1">Cuidar do diabetes também é cuidar de <em>como você se sente</em>.</h2>
+      <p class="reveal d2">Artigos de Elaine Rosa sobre o lado emocional de viver com diabetes: cansaço, culpa, medo e família.</p>
+    </div>
+    <div class="espaco__grid">{cards}</div>
+    <div class="espaco__cta reveal"><a class="btn btn--primary btn--lg" href="/blog">Ver todos os artigos <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+<!-- BLOG:END -->'''
+
 # ---------------------------------------------------------------- execução
 def main():
     global CSS_NAME, SPRITE
@@ -543,6 +563,11 @@ def main():
         d = ROOT / "blog" / p["slug"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(pagina_artigo(p, POSTS), encoding="utf-8")
+
+    # seção do blog na página principal
+    idx = (ROOT / "index.html").read_text(encoding="utf-8")
+    idx = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: secao_index(POSTS), idx, flags=re.S)
+    (ROOT / "index.html").write_text(idx, encoding="utf-8")
 
     # sitemap
     sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
