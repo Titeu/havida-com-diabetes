@@ -407,7 +407,8 @@ def pagina_artigo(p, todos):
       {nota}
       <div class="asign">
         <img src="/assets/img/author-120.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
-        <div><strong>Elaine Rosa</strong><span>Psicóloga (CRP 06/127648), educadora em diabetes e autora do livro <a href="/#livro">Há vida com diabetes</a>.</span></div>
+        <div><strong>Elaine Rosa</strong><span>Psicóloga (CRP 06/127648), educadora em diabetes e autora do livro <a href="/#livro">Há vida com diabetes</a>.</span>
+        <a class="btn btn--ghost asign__btn" href="https://psicologaalphaville.elainerosapsi.com.br/" target="_blank" rel="noopener">Saiba mais sobre a autora →</a></div>
       </div>
     </div>
     <aside class="aside" aria-label="Sobre o livro">
@@ -416,6 +417,10 @@ def pagina_artigo(p, todos):
         <h3>Há vida com diabetes</h3>
         <p>Um livro de Elaine Rosa sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.</p>
         <a class="btn btn--gold" href="/#livro"><svg><use href="#i-book"/></svg>Conhecer o livro</a>
+      </div>
+      <div class="aautor">
+        <p>Quer conhecer o trabalho de Elaine como psicóloga?</p>
+        <a class="btn btn--ghost" href="https://psicologaalphaville.elainerosapsi.com.br/" target="_blank" rel="noopener">Saiba mais sobre a autora →</a>
       </div>
     </aside>
   </div>

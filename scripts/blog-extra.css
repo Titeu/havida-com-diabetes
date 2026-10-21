@@ -149,3 +149,10 @@ a:hover>.more svg,a:hover .more svg{transform:translateX(5px)}
 .bpad--tight{padding-top:clamp(14px,2vw,24px)}
 .blog .nav.scrolled{background:rgba(255,255,255,.95)}
 @media(max-width:600px){.byline__dot::before{display:none}}
+
+.asign{flex-wrap:wrap}
+.asign__btn{margin-top:12px;padding:10px 20px;font-size:13.5px}
+.aautor{padding:20px;border-radius:var(--r-lg);background:#fff;border:1.5px solid var(--blue-100);text-align:center}
+.aautor p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;line-height:1.5}
+.aautor .btn{width:100%;justify-content:center;padding:12px 18px;font-size:14px;white-space:normal}
+@media(max-width:900px){.aautor{display:none}}
