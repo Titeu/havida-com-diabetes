@@ -4,3 +4,5 @@ _orig
 _patch_auditoria.py
 *.md
 imagens-geo.json
+_orig_blog
+scripts
