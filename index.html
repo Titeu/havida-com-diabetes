@@ -880,8 +880,47 @@ body{overflow-x:clip}
   .pin__stick .espaco__cta{margin-top:clamp(16px,3vh,32px)}
 }
 .espaco__cta{position:relative;z-index:5}
+
+/* celular: cartões mais baixos, para a imagem e o texto caberem inteiros na tela */
+@media(max-width:900px){
+  .proc__card,.pin__stick .proc__card{flex:0 0 min(74vw,280px);height:clamp(320px,56svh,400px);padding:18px}
+  .proc__card .proc__num,.pin__stick .proc__num{font-size:clamp(48px,15vw,64px);top:12px;right:16px}
+  .proc__cat{margin-bottom:8px;padding:3px 10px;font-size:10.5px}
+  .proc__card h3{font-size:clamp(18px,5.6vw,21px);margin-bottom:6px}
+  .proc__card p{font-size:13px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .proc__more{margin-top:8px;font-size:12.5px}
+}
 /* PROC:END */
 .proc.reveal{opacity:1;transform:none;transition:none}
+/* ---- hero no celular: o texto começa abaixo do menu fixo (nunca fica coberto) ---- */
+@media(max-width:860px){
+  .hero{padding-top:clamp(104px,28vw,128px)}
+  .hero__tag{margin-top:0}
+}
+@media(max-width:380px){
+  .nav,.nav.scrolled{padding-left:10px;padding-right:10px}
+  .nav__brand .logo-svg{width:92px}
+  .nav__right{gap:4px}
+  .nav__right .nav__cta{padding:8px 12px;font-size:12px}
+  .nav__burger{padding:4px}
+  .nav__burger span{width:22px}
+}
+/* ---- preço no celular: o "de R$ 59,00" quebra de linha em vez de sair da caixa ---- */
+.sale__price{flex-wrap:wrap;row-gap:2px}
+.sale__offer{min-width:0}
+@media(max-width:420px){
+  .sale__price .now{font-size:clamp(40px,14vw,56px)}
+  .sale__price .cur{font-size:20px}
+  .sale__price .old{font-size:15px}
+}
+/* ---- celular: botões e etiquetas menores; o texto quebra de linha em vez de sair da tela ---- */
+@media(max-width:600px){
+  .btn{padding:10px 18px;font-size:13px;gap:7px;white-space:normal;max-width:100%;text-align:center;justify-content:center;line-height:1.3}
+  .btn--lg{padding:12px 20px;font-size:14px}
+  .btn svg{width:15px!important;height:15px!important}
+  .author__creds span{font-size:12px;padding:7px 13px;line-height:1.35}
+  .nav__cta,.nav .btn{white-space:nowrap}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://havidacomdiabetes.com.br/#site", "url": "https://havidacomdiabetes.com.br/", "name": "Há vida com diabetes", "inLanguage": "pt-BR"}, {"@type": "Person", "@id": "https://havidacomdiabetes.com.br/#autora", "name": "Elaine Rosa", "jobTitle": "Psicóloga e educadora em diabetes", "url": "https://psicologaalphaville.elainerosapsi.com.br/", "sameAs": ["https://instagram.com/havidacomdiabetes", "https://psicologaalphaville.elainerosapsi.com.br/"]}, {"@type": "Book", "@id": "https://havidacomdiabetes.com.br/#livro", "name": "Há vida com diabetes", "author": {"@id": "https://havidacomdiabetes.com.br/#autora"}, "publisher": {"@type": "Organization", "name": "Literare Books International"}, "isbn": "978-85-9455-117-7", "bookFormat": "https://schema.org/Paperback", "inLanguage": "pt-BR", "image": "https://havidacomdiabetes.com.br/assets/img/og-cover.webp", "description": "Um livro sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.", "offers": {"@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://havidacomdiabetes.com.br/#livro", "seller": {"@type": "Organization", "name": "48.952.092 Fernando Luiz Rosa", "taxID": "48.952.092/0001-36", "address": {"@type": "PostalAddress", "addressLocality": "Jandira", "addressRegion": "SP", "addressCountry": "BR"}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "BR", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Para quem é este livro?", "acceptedAnswer": {"@type": "Answer", "text": "Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos."}}, {"@type": "Question", "name": "Preciso ter diabetes para aproveitar a leitura?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional."}}, {"@type": "Question", "name": "O livro substitui o acompanhamento médico?", "acceptedAnswer": {"@type": "Answer", "text": "De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde."}}, {"@type": "Question", "name": "É um livro técnico e difícil?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende."}}, {"@type": "Question", "name": "Em quanto tempo recebo o exemplar?", "acceptedAnswer": {"@type": "Answer", "text": "Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra."}}, {"@type": "Question", "name": "Posso presentear alguém?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados."}}, {"@type": "Question", "name": "Posso desistir da compra?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Por ser compra pela internet, você pode desistir em até 7 dias corridos após receber o livro e pedir o reembolso integral. Basta avisar pelo WhatsApp (11) 99622-1013 ou pelo e-mail havidacomdiabetes@gmail.com. Veja a política completa em “Troca e arrependimento”."}}]}]}</script>
 </head>

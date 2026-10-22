@@ -40,3 +40,13 @@
   .pin__stick .espaco__cta{margin-top:clamp(16px,3vh,32px)}
 }
 .espaco__cta{position:relative;z-index:5}
+
+/* celular: cartões mais baixos, para a imagem e o texto caberem inteiros na tela */
+@media(max-width:900px){
+  .proc__card,.pin__stick .proc__card{flex:0 0 min(74vw,280px);height:clamp(320px,56svh,400px);padding:18px}
+  .proc__card .proc__num,.pin__stick .proc__num{font-size:clamp(48px,15vw,64px);top:12px;right:16px}
+  .proc__cat{margin-bottom:8px;padding:3px 10px;font-size:10.5px}
+  .proc__card h3{font-size:clamp(18px,5.6vw,21px);margin-bottom:6px}
+  .proc__card p{font-size:13px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .proc__more{margin-top:8px;font-size:12.5px}
+}
