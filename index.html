@@ -824,6 +824,7 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
 @media(max-width:900px){.espaco__grid{grid-template-columns:minmax(0,1fr)}}
 /* ---- celular: nada pode passar da largura da tela ---- */
 html,body{max-width:100%;overflow-x:clip}
+body{overflow-x:clip}
 .wrap,.sale__grid>*,.author__grid>*,.faq__grid>*{min-width:0}
 @media(max-width:600px){
   .sale__details dl>div{flex-wrap:wrap;gap:2px 16px}
@@ -839,7 +840,7 @@ html,body{max-width:100%;overflow-x:clip}
 /* PROC:START */
 /* ===== Cartões "processo": foto de fundo, número grande, título e texto (inspirado no componente Our Process) ===== */
 .proc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px);align-items:start}
-.proc__card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:285/510;min-height:440px;border-radius:20px;overflow:hidden;isolation:isolate;
+.proc__card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:clamp(400px,58vh,510px);border-radius:20px;overflow:hidden;isolation:isolate;
   padding:clamp(22px,2.4vw,34px);color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.55);box-shadow:0 22px 50px -26px rgba(22,48,78,.55);
   opacity:var(--a,1);translate:0 var(--y,0px);transition:transform .5s var(--ease),box-shadow .5s var(--ease);will-change:translate,opacity}
 .proc__card:hover{transform:translateY(-8px);box-shadow:0 34px 60px -26px rgba(22,48,78,.7)}
@@ -862,10 +863,23 @@ html,body{max-width:100%;overflow-x:clip}
   .proc__head{flex-direction:column;align-items:flex-start}.proc__head p{text-align:left}
   .proc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 18px 26px;margin:0 calc(-1 * clamp(18px,5vw,52px));-webkit-overflow-scrolling:touch;scrollbar-width:none}
   .proc::-webkit-scrollbar{display:none}
-  .proc__card{flex:0 0 min(78vw,300px);min-height:440px;scroll-snap-align:center}
+  .proc__card{flex:0 0 min(78vw,300px);height:460px;scroll-snap-align:center}
 }
 @media(max-width:900px),(prefers-reduced-motion:reduce){.proc__card{opacity:1!important;translate:none!important}}
 .proc.reveal{opacity:1;transform:none;transition:none}
+
+/* dobra "presa": a seção fica fixa na tela enquanto a rolagem revela os cartões um a um, terminando no fim da dobra */
+.pin__stick{padding:clamp(80px,11vw,150px) 0}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+  .pin{height:330vh}
+  .pin__stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:84px 0 28px;box-sizing:border-box}
+  .pin__stick .proc__head{margin-bottom:clamp(20px,3.4vh,40px)}
+  .pin__stick .proc__head h2{font-size:clamp(28px,3.6vw,50px);margin-top:10px}
+  .pin__stick .proc__card{height:clamp(340px,46vh,500px)}
+  .pin__stick .proc__num{font-size:clamp(56px,6.2vw,104px)}
+  .pin__stick .espaco__cta{margin-top:clamp(16px,3vh,32px)}
+}
+.espaco__cta{position:relative;z-index:5}
 /* PROC:END */
 .proc.reveal{opacity:1;transform:none;transition:none}
 </style>
@@ -1180,8 +1194,8 @@ html,body{max-width:100%;overflow-x:clip}
 </section>
 
 <!-- BLOG:START -->
-<section class="espaco pad" id="espaco-saude" data-dot="Espaço Saúde">
-  <div class="wrap">
+<section class="espaco pin" id="espaco-saude" data-dot="Espaço Saúde">
+  <div class="pin__stick"><div class="wrap">
     <div class="proc__head">
       <div>
         <span class="kicker reveal">Espaço Saúde</span>
@@ -1191,7 +1205,7 @@ html,body{max-width:100%;overflow-x:clip}
     </div>
     <div class="proc reveal"><a class="proc__card" href="/blog/diabetes-e-saude-mental-cansaco-emocional" data-busca="diabetes e saude mental: quando cuidar todos os dias se torna emocionalmente cansativo entenda o sofrimento relacionado ao diabetes (diabetes distress), como diferencia-lo da depressao e quando a rotina de cuidados pede mais apoio. saude emocional quando cuidar cansa"><img class="proc__img" src="assets/img/blog/blog-diabetes-saude-mental-cansaco-emocional-900.webp" srcset="assets/img/blog/blog-diabetes-saude-mental-cansaco-emocional-480.webp 480w, assets/img/blog/blog-diabetes-saude-mental-cansaco-emocional-900.webp 900w" sizes="(max-width:900px) 78vw, 300px" width="900" height="600" loading="lazy" decoding="async" alt="Mulher olhando pensativa pela janela, em um momento de cansaço e reflexão"><p class="proc__num" aria-hidden="true">01</p><span class="proc__cat">Saúde emocional</span><h3>Quando cuidar cansa</h3><p>Entenda o sofrimento relacionado ao diabetes e como reconhecer quando a rotina de cuidados precisa de mais apoio.</p><span class="proc__more">Ler o artigo <svg><use href="#i-arrow"/></svg></span></a><a class="proc__card" href="/blog/aceitacao-do-diabetes-act" data-busca="aceitacao do diabetes: como a act pode ajudar a construir uma vida com sentido o que e aceitacao na act, por que ela nao e resignacao e como valores e passos viaveis ajudam a viver com diabetes sem se cobrar alem do possivel. act aceitar sem se resignar"><img class="proc__img" src="assets/img/blog/blog-aceitacao-diabetes-act-vida-com-sentido-900.webp" srcset="assets/img/blog/blog-aceitacao-diabetes-act-vida-com-sentido-480.webp 480w, assets/img/blog/blog-aceitacao-diabetes-act-vida-com-sentido-900.webp 900w" sizes="(max-width:900px) 78vw, 300px" width="900" height="600" loading="lazy" decoding="async" alt="Mulher de costas em um campo de lavanda ao pôr do sol"><p class="proc__num" aria-hidden="true">02</p><span class="proc__cat">ACT</span><h3>Aceitar sem se resignar</h3><p>Aceitar experiências difíceis pode abrir espaço para escolhas, vínculos e cuidados possíveis.</p><span class="proc__more">Ler o artigo <svg><use href="#i-arrow"/></svg></span></a><a class="proc__card" href="/blog/diabetes-tipo-2-e-culpa" data-busca="diabetes tipo 2 e culpa: como cuidar da saude sem transformar o diagnostico em julgamento diabetes tipo 2 tem multiplos fatores. entenda o estigma, a autocobranca e como transformar culpa em perguntas uteis para conversar com a equipe de saude. estigma e culpa culpa nao e tratamento"><img class="proc__img" src="assets/img/blog/blog-diabetes-tipo-2-culpa-estigma-900.webp" srcset="assets/img/blog/blog-diabetes-tipo-2-culpa-estigma-480.webp 480w, assets/img/blog/blog-diabetes-tipo-2-culpa-estigma-900.webp 900w" sizes="(max-width:900px) 78vw, 300px" width="900" height="600" loading="lazy" decoding="async" alt="Mulher mais velha verificando a glicemia com um glicosímetro no sofá de casa"><p class="proc__num" aria-hidden="true">03</p><span class="proc__cat">Estigma e culpa</span><h3>Culpa não é tratamento</h3><p>Compreender o estigma e a autocobrança pode ajudar a construir uma relação mais respeitosa com o tratamento.</p><span class="proc__more">Ler o artigo <svg><use href="#i-arrow"/></svg></span></a><a class="proc__card" href="/blog/diabetes-na-familia-apoio-e-autonomia" data-busca="diabetes na familia: como oferecer apoio e preservar a autonomia como a familia pode apoiar quem tem diabetes sem vigiar: conversas, acordos e divisao de tarefas que respeitam a autonomia de adultos, criancas e adolescentes. familia apoio sem vigilancia"><img class="proc__img" src="assets/img/blog/blog-diabetes-na-familia-apoio-autonomia-900.webp" srcset="assets/img/blog/blog-diabetes-na-familia-apoio-autonomia-480.webp 480w, assets/img/blog/blog-diabetes-na-familia-apoio-autonomia-900.webp 900w" sizes="(max-width:900px) 78vw, 300px" width="900" height="600" loading="lazy" decoding="async" alt="Mãe e filha conversando na cozinha; a menina usa um sensor de glicose no braço"><p class="proc__num" aria-hidden="true">04</p><span class="proc__cat">Família</span><h3>Apoio sem vigilância</h3><p>Conversas, acordos e divisão de responsabilidades podem tornar o cuidado mais colaborativo.</p><span class="proc__more">Ler o artigo <svg><use href="#i-arrow"/></svg></span></a></div>
     <div class="espaco__cta reveal"><a class="btn btn--primary btn--lg" href="/blog">Ver todos os artigos <svg><use href="#i-arrow"/></svg></a></div>
-  </div>
+  </div></div>
 </section>
 <!-- BLOG:END -->
 
@@ -1770,24 +1784,22 @@ requestAnimationFrame(function(){ setTimeout(function(){
 <!-- PROCJS:START -->
 <script>
 (function(){
-  var box=document.querySelector('.proc');
-  if(!box||window.matchMedia('(max-width:900px)').matches||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  var cards=[].slice.call(box.children),off=[0,14,28,14],ticking=false;
+  var box=document.querySelector('.proc'),pin=document.querySelector('.pin');
+  if(!box||!pin||window.matchMedia('(max-width:900px)').matches||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var cards=[].slice.call(box.children),off=[0,14,28,14];
   function clamp(v){return v<0?0:v>1?1:v}
-  function ease(t){return 1-Math.pow(1-t,3)}
+  function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
   function update(){
-    ticking=false;
-    var vh=window.innerHeight,top=box.getBoundingClientRect().top;
-    // 0 quando a fileira aparece na base da tela; 1 quando já subiu para o alto
-    var p=clamp((vh*0.92-top)/(vh*0.92-vh*0.16));
+    var r=pin.getBoundingClientRect(),run=r.height-window.innerHeight;
+    // progresso 0 → 1 ao longo de toda a dobra (acompanha a rolagem; termina no fim)
+    var p=run>0?clamp(-r.top/run):1;
     cards.forEach(function(c,i){
-      var l=ease(clamp((p-i*0.2)/0.4));
+      var l=ease(clamp((p-0.04-i*0.22)/0.3));
       c.style.setProperty('--a',l.toFixed(3));
-      c.style.setProperty('--y',((1-l)*150+off[i]*l).toFixed(1)+'px');
+      c.style.setProperty('--y',((1-l)*180+off[i]*l).toFixed(1)+'px');
     });
   }
-  function req(){update()}
-  window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);
+  window.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);
   update();
 })();
 </script>

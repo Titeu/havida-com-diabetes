@@ -364,10 +364,11 @@ a:hover>.more svg,a:hover .more svg{transform:translateX(5px)}
   .nav__right{gap:6px}
   .nav__right .nav__cta{padding:9px 14px;font-size:12.5px}
 }
+html,body{overflow-x:clip}
 
 /* ===== Cartões "processo": foto de fundo, número grande, título e texto (inspirado no componente Our Process) ===== */
 .proc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px);align-items:start}
-.proc__card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:285/510;min-height:440px;border-radius:20px;overflow:hidden;isolation:isolate;
+.proc__card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:clamp(400px,58vh,510px);border-radius:20px;overflow:hidden;isolation:isolate;
   padding:clamp(22px,2.4vw,34px);color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.55);box-shadow:0 22px 50px -26px rgba(22,48,78,.55);
   opacity:var(--a,1);translate:0 var(--y,0px);transition:transform .5s var(--ease),box-shadow .5s var(--ease);will-change:translate,opacity}
 .proc__card:hover{transform:translateY(-8px);box-shadow:0 34px 60px -26px rgba(22,48,78,.7)}
@@ -390,7 +391,20 @@ a:hover>.more svg,a:hover .more svg{transform:translateX(5px)}
   .proc__head{flex-direction:column;align-items:flex-start}.proc__head p{text-align:left}
   .proc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 18px 26px;margin:0 calc(-1 * clamp(18px,5vw,52px));-webkit-overflow-scrolling:touch;scrollbar-width:none}
   .proc::-webkit-scrollbar{display:none}
-  .proc__card{flex:0 0 min(78vw,300px);min-height:440px;scroll-snap-align:center}
+  .proc__card{flex:0 0 min(78vw,300px);height:460px;scroll-snap-align:center}
 }
 @media(max-width:900px),(prefers-reduced-motion:reduce){.proc__card{opacity:1!important;translate:none!important}}
 .proc.reveal{opacity:1;transform:none;transition:none}
+
+/* dobra "presa": a seção fica fixa na tela enquanto a rolagem revela os cartões um a um, terminando no fim da dobra */
+.pin__stick{padding:clamp(80px,11vw,150px) 0}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+  .pin{height:330vh}
+  .pin__stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:84px 0 28px;box-sizing:border-box}
+  .pin__stick .proc__head{margin-bottom:clamp(20px,3.4vh,40px)}
+  .pin__stick .proc__head h2{font-size:clamp(28px,3.6vw,50px);margin-top:10px}
+  .pin__stick .proc__card{height:clamp(340px,46vh,500px)}
+  .pin__stick .proc__num{font-size:clamp(56px,6.2vw,104px)}
+  .pin__stick .espaco__cta{margin-top:clamp(16px,3vh,32px)}
+}
+.espaco__cta{position:relative;z-index:5}

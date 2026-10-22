@@ -162,3 +162,4 @@ a:hover>.more svg,a:hover .more svg{transform:translateX(5px)}
   .nav__right{gap:6px}
   .nav__right .nav__cta{padding:9px 14px;font-size:12.5px}
 }
+html,body{overflow-x:clip}

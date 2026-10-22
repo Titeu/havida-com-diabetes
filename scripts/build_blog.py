@@ -493,14 +493,14 @@ def pagina_indice(todos):
   <p id="busca-status" class="bsearch__status" aria-live="polite"></p>
 </section>
 
-<section class="bpad bpad--tight">
-  <div class="wrap">
+<section class="pin">
+  <div class="pin__stick"><div class="wrap">
     <div class="proc__head">
       <div><span class="kicker">Comece por aqui</span><h2>Quatro textos para <em>respirar fundo</em>.</h2></div>
       <p>Cansaço, aceitação, culpa e família: por onde a conversa costuma começar.</p>
     </div>
     {proc_cards(todos, "/")}
-  </div>
+  </div></div>
 </section>
 
 <section class="bpad"><div class="wrap"><span class="kicker" style="margin-bottom:22px">Mais do {BLOG_NAME}</span><div class="bgrid">{cards}</div>
@@ -545,8 +545,8 @@ def busca_txt(p):
 
 def secao_index(todos):
     return f'''<!-- BLOG:START -->
-<section class="espaco pad" id="espaco-saude" data-dot="Espaço Saúde">
-  <div class="wrap">
+<section class="espaco pin" id="espaco-saude" data-dot="Espaço Saúde">
+  <div class="pin__stick"><div class="wrap">
     <div class="proc__head">
       <div>
         <span class="kicker reveal">{BLOG_NAME}</span>
@@ -556,7 +556,7 @@ def secao_index(todos):
     </div>
     {proc_cards(todos, "")}
     <div class="espaco__cta reveal"><a class="btn btn--primary btn--lg" href="/blog">Ver todos os artigos <svg><use href="#i-arrow"/></svg></a></div>
-  </div>
+  </div></div>
 </section>
 <!-- BLOG:END -->'''
 
