@@ -153,7 +153,7 @@ Já a depressão é uma condição clínica que pode envolver tristeza persisten
 Essa distinção é importante porque **o sofrimento relacionado ao diabetes e a depressão podem coexistir**. Por isso, tristeza frequente, isolamento, perda de prazer ou dificuldade significativa para realizar atividades precisam ser avaliados, em vez de atribuídos automaticamente às exigências do tratamento.
 
 Você não precisa descobrir sozinho se está vivendo uma sobrecarga relacionada ao diabetes, uma depressão ou ambas. Compartilhar o que está acontecendo permite compreender suas necessidades e buscar o cuidado adequado.""",
-        "Como a ACT pode contribuir?": """## Como continuar se cuidando nos dias difíceis?
+        "Como a ACT pode contribuir?": """## O que fazer quando o cuidado com o diabetes fica difícil?
 
 Um resultado de glicemia diferente do esperado pode trazer frustração, medo e pensamentos duros sobre si, como “eu nunca faço nada direito”. Em alguns momentos, isso pode aumentar a vontade de adiar uma consulta ou se afastar do cuidado.
 
