@@ -367,7 +367,7 @@ section{position:relative}
 .author__creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .author__creds span{font-size:12px;font-weight:700;color:var(--blue-700);background:var(--blue-50);
   border:1px solid var(--blue-100);padding:8px 15px;border-radius:30px}
-@media(max-width:860px){.author__grid{grid-template-columns:1fr;gap:54px}.author__badge{width:120px;height:120px;right:14px}}
+@media(max-width:860px){.author__grid{grid-template-columns:minmax(0,1fr);gap:54px}.author__badge{width:120px;height:120px;right:14px}}
 
 /* ============ 3 · VENDA ============ */
 .sale{position:relative;color:#eaf1fa;
@@ -434,15 +434,15 @@ section{position:relative}
 .sale__details dl>div:last-child{border-bottom:0}
 .sale__details dt{color:#9fbada;white-space:nowrap}
 .sale__details dd{color:#dce8f5;text-align:right;font-weight:600}
-@media(max-width:860px){.sale__grid{grid-template-columns:1fr;gap:46px}.sale__pillars{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.sale__pillars{grid-template-columns:1fr}}
+@media(max-width:860px){.sale__grid{grid-template-columns:minmax(0,1fr);gap:46px}.sale__pillars{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.sale__pillars{grid-template-columns:minmax(0,1fr)}}
 
 /* ============ 4 · DEPOIMENTOS ============ */
 .testi{background:linear-gradient(180deg,var(--ivory),var(--cream));overflow:hidden}
 .testi__lead{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:54px}
 .testi__big{font-family:"Fraunces";font-style:italic;font-size:clamp(24px,3.2vw,40px);color:var(--blue-800);line-height:1.22}
 .testi__big .mk{color:var(--blue-400);font-size:1.4em;font-family:"Fraunces"}
-@media(max-width:900px){.testi__lead{grid-template-columns:1fr}}
+@media(max-width:900px){.testi__lead{grid-template-columns:minmax(0,1fr)}}
 /* 3D curved draggable carousel */
 .t3d{position:relative;height:clamp(460px,48vw,560px);margin-top:6px;
   perspective:1900px;perspective-origin:50% 46%}
@@ -583,7 +583,7 @@ section{position:relative}
 /* mobile masonry */
 .vs__masonry{display:none}
 @media(max-width:880px){
-  .vs{grid-template-columns:1fr;min-height:0;padding:14px}
+  .vs{grid-template-columns:minmax(0,1fr);min-height:0;padding:14px}
   .vs__cloud,.vs__panel,.vs__hint{display:none}
   .vs__masonry{display:block;columns:2;column-gap:10px}
   .vs__masonry img{width:100%;border-radius:14px;margin-bottom:10px;break-inside:avoid;cursor:pointer;
@@ -640,7 +640,7 @@ section{position:relative}
 .acc.open .acc__q .ic::after{transform:scaleY(0)}
 .acc__a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
 .acc__a p{padding:0 40px 26px 0;font-size:15.5px;color:var(--ink-soft);line-height:1.7}
-@media(max-width:860px){.faq__grid{grid-template-columns:1fr;gap:40px}.faq__aside{position:static}}
+@media(max-width:860px){.faq__grid{grid-template-columns:minmax(0,1fr);gap:40px}.faq__aside{position:static}}
 
 /* ============ 7 · RODAPÉ ============ */
 .foot{background:linear-gradient(180deg,#16304e,#0f253c);color:#cfddec;position:relative;overflow:hidden}
@@ -668,7 +668,7 @@ section{position:relative}
   padding:24px 0;border-top:1px solid rgba(255,255,255,.1);font-size:12.5px;color:#8fa9c4}
 .foot__bar a{color:#bcd2e8;text-decoration:none}
 @media(max-width:860px){.foot__main{grid-template-columns:1fr 1fr}.foot__brand{grid-column:1/-1}}
-@media(max-width:520px){.foot__main{grid-template-columns:1fr}}
+@media(max-width:520px){.foot__main{grid-template-columns:minmax(0,1fr)}}
 
 /* hero book static image */
 .hero__book-img{width:100%;height:100%;object-fit:contain;
@@ -821,7 +821,21 @@ body{background:linear-gradient(180deg,var(--cream) 0%,var(--paper) 35%,var(--iv
 .espaco__body p{font-size:15px;color:var(--ink-soft);line-height:1.6}
 .espaco__more{margin-top:auto;padding-top:6px;font-weight:800;font-size:14px;color:var(--blue-700)}
 .espaco__cta{text-align:center;margin-top:clamp(32px,4vw,48px)}
-@media(max-width:900px){.espaco__grid{grid-template-columns:1fr}}
+@media(max-width:900px){.espaco__grid{grid-template-columns:minmax(0,1fr)}}
+/* ---- celular: nada pode passar da largura da tela ---- */
+html,body{max-width:100%;overflow-x:clip}
+.wrap,.sale__grid>*,.author__grid>*,.faq__grid>*{min-width:0}
+@media(max-width:600px){
+  .sale__details dl>div{flex-wrap:wrap;gap:2px 16px}
+  .sale__details dt{white-space:normal}
+  .sale__details dd{text-align:right;margin-left:auto;overflow-wrap:anywhere}
+}
+@media(max-width:420px){
+  .nav,.nav.scrolled{padding-left:14px;padding-right:14px}
+  .nav__brand .logo-svg{width:104px}
+  .nav__right{gap:6px}
+  .nav__right .nav__cta{padding:9px 14px;font-size:12.5px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://havidacomdiabetes.com.br/#site", "url": "https://havidacomdiabetes.com.br/", "name": "Há vida com diabetes", "inLanguage": "pt-BR"}, {"@type": "Person", "@id": "https://havidacomdiabetes.com.br/#autora", "name": "Elaine Rosa", "jobTitle": "Psicóloga e educadora em diabetes", "url": "https://psicologaalphaville.elainerosapsi.com.br/", "sameAs": ["https://instagram.com/havidacomdiabetes", "https://psicologaalphaville.elainerosapsi.com.br/"]}, {"@type": "Book", "@id": "https://havidacomdiabetes.com.br/#livro", "name": "Há vida com diabetes", "author": {"@id": "https://havidacomdiabetes.com.br/#autora"}, "publisher": {"@type": "Organization", "name": "Literare Books International"}, "isbn": "978-85-9455-117-7", "bookFormat": "https://schema.org/Paperback", "inLanguage": "pt-BR", "image": "https://havidacomdiabetes.com.br/assets/img/og-cover.webp", "description": "Um livro sobre acolhimento, autoconhecimento e transformação para quem vive com diabetes e para quem caminha ao lado.", "offers": {"@type": "Offer", "price": "39.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://havidacomdiabetes.com.br/#livro", "seller": {"@type": "Organization", "name": "48.952.092 Fernando Luiz Rosa", "taxID": "48.952.092/0001-36", "address": {"@type": "PostalAddress", "addressLocality": "Jandira", "addressRegion": "SP", "addressCountry": "BR"}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "BR", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Para quem é este livro?", "acceptedAnswer": {"@type": "Answer", "text": "Para quem vive com diabetes (tipo 1 ou tipo 2) e para quem caminha ao lado — familiares, amigos e cuidadores. A linguagem é acolhedora e acessível, pensada para idades dos 16 aos 70 anos."}}, {"@type": "Question", "name": "Preciso ter diabetes para aproveitar a leitura?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Boa parte dos leitores são familiares que querem entender melhor o que a pessoa sente e como apoiá-la. O livro fala tanto do cuidado prático quanto do emocional."}}, {"@type": "Question", "name": "O livro substitui o acompanhamento médico?", "acceptedAnswer": {"@type": "Answer", "text": "De forma alguma. Ele é um companheiro emocional e educativo que caminha junto com o seu tratamento. As decisões clínicas devem sempre ser tomadas com a sua equipe de saúde."}}, {"@type": "Question", "name": "É um livro técnico e difícil?", "acceptedAnswer": {"@type": "Answer", "text": "Não. É uma narrativa real, leve e honesta, baseada na própria história da autora e em estudos sobre educação em diabetes. Você lê como quem conversa com alguém que entende."}}, {"@type": "Question", "name": "Em quanto tempo recebo o exemplar?", "acceptedAnswer": {"@type": "Answer", "text": "Após a confirmação do pagamento, o envio é feito para todo o Brasil. O prazo de entrega varia conforme a sua região e é informado no momento da compra."}}, {"@type": "Question", "name": "Posso presentear alguém?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — e é um dos presentes mais bonitos que você pode dar. É possível incluir uma dedicatória especial. Fale com a gente pelo WhatsApp para pedidos personalizados."}}, {"@type": "Question", "name": "Posso desistir da compra?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Por ser compra pela internet, você pode desistir em até 7 dias corridos após receber o livro e pedir o reembolso integral. Basta avisar pelo WhatsApp (11) 99622-1013 ou pelo e-mail havidacomdiabetes@gmail.com. Veja a política completa em “Troca e arrependimento”."}}]}]}</script>
 </head>
