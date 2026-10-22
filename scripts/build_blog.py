@@ -138,6 +138,57 @@ def parse_artigo(paras):
                 min=max(2, math.ceil(palavras / 190)))
 
 
+
+# Trechos reescritos depois do .docx (o texto abaixo substitui a seção de mesmo título). Formato: "## título" + parágrafos.
+SUBSTITUICOES = {
+    "diabetes-na-familia-apoio-e-autonomia": {
+        "Uma reflexão orientada pela ACT": """## Como apoiar quem você ama sem transformar o cuidado em cobrança
+
+Quando alguém da família tem diabetes, o medo e a preocupação podem influenciar a maneira de conversar. Às vezes, a intenção é ajudar, mas o cuidado acaba aparecendo como insistência, vigilância ou crítica.
+
+Nesses momentos, vale fazer uma pausa e se perguntar: **“Que familiar eu quero ser nesta conversa? Como posso demonstrar o carinho e o respeito que desejo oferecer?”**
+
+Você não precisa deixar de sentir preocupação para agir com mais acolhimento. Pode reconhecer esse sentimento e, ainda assim, escolher escutar até o fim, perguntar se a pessoa gostaria de uma sugestão ou procurar entender o que está difícil antes de cobrar uma mudança. Uma pergunta como “O que posso fazer para ajudar?” pode abrir espaço para uma conversa em que ambos tenham voz.
+
+Quem oferece apoio também precisa de cuidado. Reconhecer o próprio cansaço, pedir ajuda e compartilhar responsabilidades são formas de tornar essa participação mais sustentável. Conforme as necessidades e os acordos da família, um primeiro passo pode ser reunir dúvidas para uma consulta, caso a pessoa queira companhia, ou combinar quais tarefas cada um pode assumir.
+
+O cuidado pode ser construído nesses pequenos gestos: estar disponível, respeitar a autonomia e encontrar, juntos, maneiras de lidar com as dificuldades do dia a dia.""",
+    },
+}
+
+
+# Perguntas extras (somam-se às do .docx). Formato: (pergunta, resposta).
+FAQ_EXTRAS = {
+    "diabetes-na-familia-apoio-e-autonomia": [
+        ("Sentir preocupação com meu familiar significa que estou fazendo algo errado?",
+         "Não. Preocupar-se é compreensível. Você pode reconhecer esse sentimento e, ainda assim, escolher como agir: escutar até o fim, perguntar se a pessoa quer uma sugestão ou tentar entender o que está difícil antes de cobrar uma mudança."),
+        ("O que posso perguntar em vez de cobrar?",
+         "Perguntas abertas costumam ajudar, como “O que posso fazer para ajudar?” ou “Você prefere que eu escute ou que pense em soluções com você?”. O ponto é abrir espaço para uma conversa em que as duas pessoas tenham voz."),
+        ("E se a pessoa não quiser a minha ajuda?",
+         "Em um adulto capaz de decidir, a participação da família deve respeitar as escolhas e os acordos construídos. Vale combinar quando e como a ajuda é bem-vinda e, se houver dúvidas sobre segurança ou tratamento, levar essa conversa à equipe de saúde."),
+        ("Preciso acompanhar a pessoa nas consultas?",
+         "Só se ela quiser companhia. Um primeiro passo pode ser reunir dúvidas para a consulta e combinar, juntos, como a família pode participar. Cada família chega a acordos diferentes, e eles podem mudar com o tempo."),
+        ("Como dividir as tarefas do cuidado sem sobrecarregar ninguém?",
+         "Comece por uma única tarefa e combine quem faz o quê e quando o acordo será revisto. Quem oferece apoio também precisa de cuidado: reconhecer o próprio cansaço, pedir ajuda e compartilhar responsabilidades torna a participação mais sustentável."),
+        ("Quem apoia alguém com diabetes também pode buscar ajuda psicológica?",
+         "Sim. O cansaço, o medo e a sobrecarga de quem acompanha também merecem atenção, mesmo que a pessoa com diabetes não esteja em acompanhamento psicológico."),
+    ],
+}
+
+
+def aplicar_substituicoes(slug, art):
+    art["faq"] = art["faq"] + FAQ_EXTRAS.get(slug, [])
+    for titulo_antigo, md in SUBSTITUICOES.get(slug, {}).items():
+        corpo = art["corpo"]
+        i = next(n for n, (tp, x) in enumerate(corpo) if tp == "h2" and x == titulo_antigo)
+        j = next((n for n in range(i + 1, len(corpo)) if corpo[n][0] == "h2"), len(corpo))
+        novos = []
+        for bloco in md.strip().split("\n\n"):
+            bloco = bloco.strip()
+            novos.append(("h2", bloco[3:]) if bloco.startswith("## ") else ("p", bloco))
+        art["corpo"] = corpo[:i] + novos + corpo[j:]
+
+
 # ---------------------------------------------------------------- CSS e sprite herdados do index.html
 def extrair_css_base():
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -574,6 +625,7 @@ def main():
 
     for p in POSTS:
         p["art"] = parse_artigo(ler_docx(ARTIGOS / p["docx"]))
+        aplicar_substituicoes(p["slug"], p["art"])
         print(f"  {p['slug']}: {p['art']['min']} min, {len(p['art']['faq'])} FAQs, {len(p['art']['refs'])} refs")
 
     (ROOT / "blog").mkdir(exist_ok=True)
