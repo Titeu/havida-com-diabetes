@@ -248,9 +248,25 @@ TITULOS = {
 }
 
 
+# Parágrafos trocados: slug -> [(início do parágrafo antigo, [novos parágrafos])]
+PARAGRAFOS = {
+    "diabetes-e-saude-mental-cansaco-emocional": [
+        ("A American Diabetes Association destaca que esse sofrimento", [
+            "**A hemoglobina glicada pode estar dentro da meta, enquanto a pessoa enfrenta uma sobrecarga para manter esse resultado.** Os exames ajudam a acompanhar o diabetes, mas não mostram, por si só, como está sendo viver com as exigências do tratamento.",
+            "Monitorar a glicemia, planejar a alimentação e tomar decisões diárias pode exigir um esforço que passa despercebido por quem vê apenas os resultados. Por isso, além de perguntar “como está sua glicemia?”, também precisamos perguntar: **“Como tem sido, para você, cuidar do diabetes todos os dias?”**",
+            "A American Diabetes Association destaca que o sofrimento relacionado ao diabetes pode ocorrer tanto no tipo 1 quanto no tipo 2, inclusive quando a hemoglobina glicada está dentro da meta.",
+        ]),
+    ],
+}
+
+
 def aplicar_substituicoes(slug, art):
     if slug in TITULOS:
         art["titulo"] = TITULOS[slug]
+    for inicio, novos in PARAGRAFOS.get(slug, []):
+        corpo = art["corpo"]
+        i = next(n for n, (tp, x) in enumerate(corpo) if tp == "p" and x.startswith(inicio))
+        art["corpo"] = corpo[:i] + [("p", x) for x in novos] + corpo[i + 1:]
     art["faq"] = art["faq"] + FAQ_EXTRAS.get(slug, [])
     for titulo_antigo, md in SUBSTITUICOES.get(slug, {}).items():
         corpo = art["corpo"]
