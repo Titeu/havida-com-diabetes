@@ -21,9 +21,9 @@ BLOG_NAME = "Espaço Saúde"
 HOJE = "2026-10-21"
 
 POSTS = [
-    dict(slug="diabetes-e-saude-mental-cansaco-emocional", curto="Quando cuidar cansa", docx="Diabetes e saúde mental quando cuidar todos os dias se torna emocionalmente cansativo.docx",
+    dict(slug="diabetes-e-saude-mental-cansaco-emocional", curto="Quando o tratamento pesa", docx="Diabetes e saúde mental quando cuidar todos os dias se torna emocionalmente cansativo.docx",
          cat="Saúde emocional", img="blog-diabetes-saude-mental-cansaco-emocional", pub=HOJE,
-         seo_title="Diabetes e saúde mental: quando o cuidado cansa",
+         seo_title="Diabetes e saúde mental: quando o tratamento gera sofrimento",
          desc="Entenda o sofrimento relacionado ao diabetes (diabetes distress), como diferenciá-lo da depressão e quando a rotina de cuidados pede mais apoio.",
          alt="Mulher olhando pensativa pela janela, em um momento de cansaço e reflexão"),
     dict(slug="aceitacao-do-diabetes-act", curto="Aceitar sem se resignar", docx="Aceitação do diabetes como a ACT pode ajudar a construir uma vida com sentido.docx",
@@ -243,7 +243,14 @@ def art_de_md(path, base):
     return art
 
 
+TITULOS = {
+    "diabetes-e-saude-mental-cansaco-emocional": "Diabetes e saúde mental: quando as exigências do tratamento geram sofrimento",
+}
+
+
 def aplicar_substituicoes(slug, art):
+    if slug in TITULOS:
+        art["titulo"] = TITULOS[slug]
     art["faq"] = art["faq"] + FAQ_EXTRAS.get(slug, [])
     for titulo_antigo, md in SUBSTITUICOES.get(slug, {}).items():
         corpo = art["corpo"]
