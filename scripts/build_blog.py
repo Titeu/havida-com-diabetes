@@ -28,7 +28,7 @@ POSTS = [
          alt="Mulher olhando pensativa pela janela, em um momento de cansaço e reflexão"),
     dict(slug="aceitacao-do-diabetes-act", curto="Aceitar sem se resignar", docx="Aceitação do diabetes como a ACT pode ajudar a construir uma vida com sentido.docx",
          cat="ACT", img="blog-aceitacao-diabetes-act-vida-com-sentido", pub=HOJE,
-         seo_title="Aceitação do diabetes: o que a ACT propõe",
+         seo_title="Aceitação do diabetes: como cuidar de si mesmo",
          desc="O que é aceitação na ACT, por que ela não é resignação e como valores e passos viáveis ajudam a viver com diabetes sem se cobrar além do possível.",
          alt="Mulher de costas em um campo de lavanda ao pôr do sol"),
     dict(slug="diabetes-tipo-2-e-culpa", curto="Culpa não é tratamento", docx="Diabetes tipo 2 e culpa como cuidar da saúde sem transformar o diagnóstico em julgamento.docx",
@@ -170,6 +170,20 @@ O cuidado pode ser construído nesses pequenos gestos: estar disponível, respei
 
 # Perguntas extras (somam-se às do .docx). Formato: (pergunta, resposta).
 FAQ_EXTRAS = {
+    "aceitacao-do-diabetes-act": [
+        ("Aceitar significa desistir de querer que as coisas fossem diferentes?",
+         "Não. Você pode reconhecer que o diabetes faz parte da sua realidade e continuar desejando que as coisas fossem diferentes. Pode sentir raiva das exigências do tratamento, tristeza pelas mudanças e cansaço das decisões diárias, e ainda assim encontrar maneiras de se cuidar."),
+        ("O que fazer quando evitar o assunto traz alívio?",
+         "Observe, sem se julgar: “O que fica mais fácil quando evito essa situação? E o que fica mais difícil depois?”. Essas perguntas ajudam a perceber as consequências das escolhas e a pensar no apoio necessário para um próximo passo."),
+        ("Como contar à equipe que estou com medo ou vergonha?",
+         "Você pode anotar as dúvidas, dizer que está com receio ou pedir a companhia de alguém de confiança. Preparar uma pergunta para a consulta ou compartilhar uma dificuldade já é uma forma de participar do próprio cuidado."),
+        ("É normal voltar a sentir raiva ou tristeza depois de um tempo?",
+         "Sim. Esses sentimentos podem reaparecer diante de mudanças no tratamento, novas dificuldades ou momentos de maior cansaço. Isso não apaga o que você aprendeu nem significa que todo o caminho foi perdido."),
+        ("Falta de dinheiro ou de acesso a medicamentos é falta de aceitação?",
+         "Não. Nem toda dificuldade com o tratamento está relacionada à maneira de lidar com o diagnóstico. Falta de dinheiro, de insumos, de informação clara ou de apoio são barreiras reais e precisam entrar na conversa com a equipe de saúde."),
+        ("A ACT melhora a glicemia?",
+         "Pesquisas investigam a contribuição da ACT para o cuidado em diabetes, com resultados que não são uniformes. Por isso, não é possível prometer que essa abordagem produzirá determinada mudança na glicemia de uma pessoa. A indicação da psicoterapia depende de avaliação individual."),
+    ],
     "diabetes-e-saude-mental-cansaco-emocional": [
         ("Um resultado ruim significa que eu falhei?",
          "Não. Um resultado diferente do esperado é uma informação para ser compreendida com a equipe de saúde, não uma sentença sobre quem você é. Um pensamento de fracasso, por mais convincente que pareça, não resume todo o esforço envolvido em conviver com o diabetes."),
@@ -197,6 +211,36 @@ FAQ_EXTRAS = {
          "Sim. O cansaço, o medo e a sobrecarga de quem acompanha também merecem atenção, mesmo que a pessoa com diabetes não esteja em acompanhamento psicológico."),
     ],
 }
+
+
+def art_de_md(path, base):
+    """Artigo revisado em Markdown simples: '# título', '## seção', '* ref', '::proximo:: texto'. Mantém o subtítulo e as perguntas do .docx."""
+    linhas = [l.rstrip() for l in Path(path).read_text(encoding="utf-8").split("\n")]
+    titulo, corpo, refs, nota, proximo, modo = None, [], [], "", "", "corpo"
+    for l in linhas:
+        if not l.strip():
+            continue
+        if l.startswith("# "):
+            titulo = l[2:].strip()
+        elif l.startswith("## "):
+            if l[3:].lower().startswith("referências"):
+                modo = "refs"
+            else:
+                corpo.append(("h2", l[3:].strip()))
+        elif modo == "refs":
+            if l.startswith("* "):
+                refs.append(l[2:].strip())
+            else:
+                nota = l.strip()
+        elif l.startswith("::proximo::"):
+            proximo = l[len("::proximo::"):].strip()
+        elif l.startswith("“") and re.search(r"”\.?$", l):
+            corpo.append(("quote", l.strip()))
+        else:
+            corpo.append(("p", l.strip()))
+    art = dict(base)
+    art.update(titulo=titulo, corpo=corpo, refs=refs, nota=nota, proximo=proximo)
+    return art
 
 
 def aplicar_substituicoes(slug, art):
@@ -648,7 +692,14 @@ def main():
 
     for p in POSTS:
         p["art"] = parse_artigo(ler_docx(ARTIGOS / p["docx"]))
+        rev = ROOT / "scripts" / "artigos-revisados" / (p["slug"] + ".md")
+        if rev.exists():
+            p["art"] = art_de_md(rev, p["art"])
         aplicar_substituicoes(p["slug"], p["art"])
+        a = p["art"]
+        palavras = sum(len(plain(x if isinstance(x, str) else " ".join(x)).split()) for _, x in a["corpo"])
+        palavras += sum(len(q.split()) + len(r.split()) for q, r in a["faq"]) + len(a["proximo"].split())
+        a["min"] = max(2, math.ceil(palavras / 190))
         print(f"  {p['slug']}: {p['art']['min']} min, {len(p['art']['faq'])} FAQs, {len(p['art']['refs'])} refs")
 
     (ROOT / "blog").mkdir(exist_ok=True)
