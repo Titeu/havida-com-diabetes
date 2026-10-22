@@ -465,7 +465,7 @@ def pagina_artigo(p, todos):
          "image": f"{SITE}/assets/img/blog/{p['img']}.webp", "datePublished": p["pub"], "dateModified": p["pub"],
          "inLanguage": "pt-BR", "mainEntityOfPage": url, "articleSection": p["cat"],
          "author": {"@type": "Person", "@id": f"{SITE}/#autora", "name": "Elaine Rosa",
-                    "jobTitle": "Psicóloga (CRP 06/127648) e educadora em diabetes", "url": f"{SITE}/"},
+                    "jobTitle": "Psicóloga (CRP 06/127648), educadora em diabetes e palestrante", "url": f"{SITE}/"},
          "publisher": {"@type": "Organization", "name": "Há vida com diabetes", "url": f"{SITE}/",
                        "logo": {"@type": "ImageObject", "url": f"{SITE}/assets/img/apple-touch-icon.png"}},
          "isPartOf": {"@type": "Blog", "name": BLOG_NAME, "url": f"{SITE}/blog"}},
@@ -511,7 +511,7 @@ def pagina_artigo(p, todos):
       <h1>{esc(a['titulo'])}</h1>
       <p class="lead">{esc(a['sub'])}</p>
       <div class="byline">
-        <div class="byline__who"><img src="/assets/img/author-120.webp" alt="Elaine Rosa" width="46" height="46"><div><b>Elaine Rosa</b>Psicóloga · CRP 06/127648 · Educadora em diabetes</div></div>
+        <div class="byline__who"><img src="/assets/img/author-120.webp" alt="Elaine Rosa" width="46" height="46"><div><b>Elaine Rosa</b>Psicóloga · CRP 06/127648 · Educadora em diabetes · Palestrante</div></div>
         <time class="byline__dot" datetime="{p['pub']}">{data_br(p['pub'])}</time>
         <span class="byline__dot">{a['min']} min de leitura</span>
       </div>
@@ -527,7 +527,7 @@ def pagina_artigo(p, todos):
       {nota}
       <div class="asign">
         <img src="/assets/img/author-120.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
-        <div><strong>Elaine Rosa</strong><span>Psicóloga (CRP 06/127648), educadora em diabetes e autora do livro <a href="/#livro">Há vida com diabetes</a>.</span>
+        <div><strong>Elaine Rosa</strong><span>Psicóloga (CRP 06/127648), educadora em diabetes, palestrante e autora do livro <a href="/#livro">Há vida com diabetes</a>.</span>
         <a class="btn btn--ghost asign__btn" href="https://psicologaalphaville.elainerosapsi.com.br/" target="_blank" rel="noopener">Saiba mais sobre a autora →</a></div>
       </div>
     </div>
