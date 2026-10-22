@@ -21,27 +21,27 @@ BLOG_NAME = "Espaço Saúde"
 HOJE = "2026-10-21"
 
 POSTS = [
-    dict(slug="diabetes-e-saude-mental-cansaco-emocional", docx="Diabetes e saúde mental quando cuidar todos os dias se torna emocionalmente cansativo.docx",
+    dict(slug="diabetes-e-saude-mental-cansaco-emocional", curto="Quando cuidar cansa", docx="Diabetes e saúde mental quando cuidar todos os dias se torna emocionalmente cansativo.docx",
          cat="Saúde emocional", img="blog-diabetes-saude-mental-cansaco-emocional", pub=HOJE,
          seo_title="Diabetes e saúde mental: quando o cuidado cansa",
          desc="Entenda o sofrimento relacionado ao diabetes (diabetes distress), como diferenciá-lo da depressão e quando a rotina de cuidados pede mais apoio.",
          alt="Mulher olhando pensativa pela janela, em um momento de cansaço e reflexão"),
-    dict(slug="aceitacao-do-diabetes-act", docx="Aceitação do diabetes como a ACT pode ajudar a construir uma vida com sentido.docx",
+    dict(slug="aceitacao-do-diabetes-act", curto="Aceitar sem se resignar", docx="Aceitação do diabetes como a ACT pode ajudar a construir uma vida com sentido.docx",
          cat="ACT", img="blog-aceitacao-diabetes-act-vida-com-sentido", pub=HOJE,
          seo_title="Aceitação do diabetes: o que a ACT propõe",
          desc="O que é aceitação na ACT, por que ela não é resignação e como valores e passos viáveis ajudam a viver com diabetes sem se cobrar além do possível.",
          alt="Mulher de costas em um campo de lavanda ao pôr do sol"),
-    dict(slug="diabetes-tipo-2-e-culpa", docx="Diabetes tipo 2 e culpa como cuidar da saúde sem transformar o diagnóstico em julgamento.docx",
+    dict(slug="diabetes-tipo-2-e-culpa", curto="Culpa não é tratamento", docx="Diabetes tipo 2 e culpa como cuidar da saúde sem transformar o diagnóstico em julgamento.docx",
          cat="Estigma e culpa", img="blog-diabetes-tipo-2-culpa-estigma", pub=HOJE,
          seo_title="Diabetes tipo 2 e culpa: cuidar sem julgamento",
          desc="Diabetes tipo 2 tem múltiplos fatores. Entenda o estigma, a autocobrança e como transformar culpa em perguntas úteis para conversar com a equipe de saúde.",
          alt="Mulher mais velha verificando a glicemia com um glicosímetro no sofá de casa"),
-    dict(slug="diabetes-na-familia-apoio-e-autonomia", docx="Diabetes na família como oferecer apoio e preservar a autonomia.docx",
+    dict(slug="diabetes-na-familia-apoio-e-autonomia", curto="Apoio sem vigilância", docx="Diabetes na família como oferecer apoio e preservar a autonomia.docx",
          cat="Família", img="blog-diabetes-na-familia-apoio-autonomia", pub=HOJE,
          seo_title="Diabetes na família: apoio sem vigilância",
          desc="Como a família pode apoiar quem tem diabetes sem vigiar: conversas, acordos e divisão de tarefas que respeitam a autonomia de adultos, crianças e adolescentes.",
          alt="Mãe e filha conversando na cozinha; a menina usa um sensor de glicose no braço"),
-    dict(slug="medo-de-hipoglicemia", docx="Medo de hipoglicemia quando a preocupação começa a limitar a vida.docx",
+    dict(slug="medo-de-hipoglicemia", curto="O medo que limita", docx="Medo de hipoglicemia quando a preocupação começa a limitar a vida.docx",
          cat="Hipoglicemia", img="blog-medo-de-hipoglicemia-vida-limitada", pub=HOJE,
          seo_title="Medo de hipoglicemia: quando limita a vida",
          desc="O medo de hipoglicemia pode limitar sono, passeios e exercícios. Veja quando ele merece atenção, como organizar a segurança e onde a ACT entra.",
@@ -454,7 +454,7 @@ def pagina_indice(todos):
     ]
     norm = lambda s: re.sub(r"[̀-ͯ]", "", __import__("unicodedata").normalize("NFD", s)).lower()
     busca = lambda p: html.escape(norm(" ".join([p["art"]["titulo"], p["desc"], p["cat"]])))
-    d, resto = todos[0], todos[1:]
+    resto = todos[4:]
     cards = "".join(
         f'<article class="bcard reveal" data-busca="{busca(p)}"><a href="/blog/{p["slug"]}">'
         f'<div class="bcard__img">{img_tag(p, sizes="(max-width:700px) 100vw, 560px", w=900, h=600)}</div>'
@@ -491,21 +491,17 @@ def pagina_indice(todos):
   <p id="busca-status" class="bsearch__status" aria-live="polite"></p>
 </section>
 
-<section class="bpad bpad--tight" data-busca="{busca(d)}">
+<section class="bpad bpad--tight">
   <div class="wrap">
-    <a class="bfeat reveal" href="/blog/{d['slug']}">
-      <div class="bfeat__img">{img_tag(d, sizes="(max-width:820px) 100vw, 640px", eager=True)}</div>
-      <div class="bfeat__info">
-        <span class="cat">{esc(d['cat'])}</span>
-        <h2>{esc(d['art']['titulo'])}</h2>
-        <p>{esc(d['art']['sub'])}</p>
-        <span class="more">Leia o artigo <svg><use href="#i-arrow"/></svg></span>
-      </div>
-    </a>
+    <div class="proc__head">
+      <div><span class="kicker">Comece por aqui</span><h2>Quatro textos para <em>respirar fundo</em>.</h2></div>
+      <p>Cansaço, aceitação, culpa e família: por onde a conversa costuma começar.</p>
+    </div>
+    {proc_cards(todos, "/")}
   </div>
 </section>
 
-<section class="bpad"><div class="wrap"><div class="bgrid">{cards}</div>
+<section class="bpad"><div class="wrap"><span class="kicker" style="margin-bottom:22px">Mais do {BLOG_NAME}</span><div class="bgrid">{cards}</div>
   <p class="bvazio" id="busca-vazio" hidden>Nenhum artigo encontrado para essa busca. Tente outra palavra, como <b>família</b>, <b>culpa</b> ou <b>hipoglicemia</b>.</p>
 </div></section>
 
@@ -524,20 +520,39 @@ def pagina_indice(todos):
 
 
 
+
+def proc_cards(todos, pre):
+    """Quatro cartões no estilo 'processo': foto de fundo, número grande, título curto e resumo."""
+    out = []
+    for i, p in enumerate(todos[:4], 1):
+        base = f"{pre}assets/img/blog/{p['img']}"
+        out.append(
+            f'<a class="proc__card" href="/blog/{p["slug"]}" data-busca="{busca_txt(p)}">'
+            f'<img class="proc__img" src="{base}-900.webp" srcset="{base}-480.webp 480w, {base}-900.webp 900w" sizes="(max-width:900px) 78vw, 300px" width="900" height="600" loading="lazy" decoding="async" alt="{html.escape(p["alt"])}">'
+            f'<p class="proc__num" aria-hidden="true">{i:02d}</p>'
+            f'<span class="proc__cat">{esc(p["cat"])}</span><h3>{esc(p["curto"])}</h3><p>{esc(p["art"]["sub"])}</p>'
+            f'<span class="proc__more">Ler o artigo <svg><use href="#i-arrow"/></svg></span></a>')
+    return '<div class="proc reveal">' + "".join(out) + "</div>"
+
+
+def busca_txt(p):
+    import unicodedata
+    n = unicodedata.normalize("NFD", " ".join([p["art"]["titulo"], p["desc"], p["cat"], p["curto"]]))
+    return html.escape(re.sub(r"[̀-ͯ]", "", n).lower())
+
+
 def secao_index(todos):
-    cards = "".join(
-        f'<a class="espaco__card reveal d{i}" href="/blog/{p["slug"]}"><div class="espaco__img"><img src="assets/img/blog/{p["img"]}-480.webp" srcset="assets/img/blog/{p["img"]}-480.webp 480w, assets/img/blog/{p["img"]}-900.webp 900w" sizes="(max-width:900px) 100vw, 380px" width="480" height="320" loading="lazy" decoding="async" alt="{html.escape(p["alt"])}"></div>'
-        f'<div class="espaco__body"><span class="espaco__cat">{esc(p["cat"])}</span><h3>{esc(p["art"]["titulo"])}</h3><p>{esc(p["art"]["sub"])}</p><span class="espaco__more">Ler o artigo →</span></div></a>'
-        for i, p in enumerate(todos[:3], 1))
     return f'''<!-- BLOG:START -->
 <section class="espaco pad" id="espaco-saude" data-dot="Espaço Saúde">
   <div class="wrap">
-    <div class="sec-head center">
-      <span class="kicker kicker--c reveal">{BLOG_NAME}</span>
-      <h2 class="reveal d1">Cuidar do diabetes também é cuidar de <em>como você se sente</em>.</h2>
+    <div class="proc__head">
+      <div>
+        <span class="kicker reveal">{BLOG_NAME}</span>
+        <h2 class="reveal d1">Cuidar do diabetes também é cuidar de <em>como você se sente</em>.</h2>
+      </div>
       <p class="reveal d2">Artigos de Elaine Rosa sobre o lado emocional de viver com diabetes: cansaço, culpa, medo e família.</p>
     </div>
-    <div class="espaco__grid">{cards}</div>
+    {proc_cards(todos, "")}
     <div class="espaco__cta reveal"><a class="btn btn--primary btn--lg" href="/blog">Ver todos os artigos <svg><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
@@ -547,7 +562,9 @@ def secao_index(todos):
 def main():
     global CSS_NAME, SPRITE
     SPRITE = extrair_sprite() + "\n"
-    css = extrair_css_base() + "\n" + (ROOT / "scripts" / "blog-extra.css").read_text(encoding="utf-8")
+    global PROC
+    PROC = (ROOT / "scripts" / "process.css").read_text(encoding="utf-8")
+    css = extrair_css_base() + "\n" + (ROOT / "scripts" / "blog-extra.css").read_text(encoding="utf-8") + "\n" + PROC
     CSS_NAME = f"blog.{hashlib.sha1(css.encode()).hexdigest()[:8]}.css"
     for velho in (ROOT / "assets").glob("blog.*.css"):
         velho.unlink()
@@ -566,6 +583,7 @@ def main():
 
     # seção do blog na página principal
     idx = (ROOT / "index.html").read_text(encoding="utf-8")
+    idx = re.sub(r"/\* PROC:START \*/.*?/\* PROC:END \*/", lambda m: "/* PROC:START */\n" + PROC + "/* PROC:END */", idx, flags=re.S)
     idx = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: secao_index(POSTS), idx, flags=re.S)
     (ROOT / "index.html").write_text(idx, encoding="utf-8")
 

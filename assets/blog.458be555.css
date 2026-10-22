@@ -364,3 +364,38 @@ a:hover>.more svg,a:hover .more svg{transform:translateX(5px)}
   .nav__right{gap:6px}
   .nav__right .nav__cta{padding:9px 14px;font-size:12.5px}
 }
+
+/* ===== Cartões "processo": foto de fundo, número grande, título e texto (inspirado no componente Our Process) ===== */
+.proc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px);align-items:start}
+.proc__card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:285/510;min-height:440px;border-radius:20px;overflow:hidden;isolation:isolate;
+  padding:clamp(22px,2.4vw,34px);color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.55);box-shadow:0 22px 50px -26px rgba(22,48,78,.55);
+  opacity:0;transform:translateY(64px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out),box-shadow .5s var(--ease)}
+.proc.in .proc__card{opacity:1;transform:translateY(var(--o,0px))}
+.proc.in .proc__card:nth-child(2){transition-delay:.12s;--o:14px}
+.proc.in .proc__card:nth-child(3){transition-delay:.24s;--o:28px}
+.proc.in .proc__card:nth-child(4){transition-delay:.36s;--o:14px}
+.proc.in .proc__card:hover{transform:translateY(calc(var(--o,0px) - 8px));box-shadow:0 34px 60px -26px rgba(22,48,78,.7)}
+.proc__img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.proc__card:hover .proc__img{transform:scale(1.06)}
+.proc__card::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(34,80,135,.28) 0%,rgba(34,80,135,0) 30%,rgba(22,48,78,.55) 58%,rgba(14,32,56,.93) 100%)}
+.proc__card .proc__num{position:absolute;top:clamp(18px,2vw,28px);right:clamp(18px,2.2vw,32px);margin:0;font-family:"Fraunces",serif;font-weight:600;font-size:clamp(64px,7.4vw,112px);line-height:1;letter-spacing:-.03em;color:#fff;opacity:1;text-shadow:0 6px 30px rgba(14,32,56,.35)}
+.proc__cat{align-self:flex-start;margin-bottom:12px;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);color:#fff;padding:4px 12px;border-radius:50px;font-size:11.5px;font-weight:800;letter-spacing:.05em}
+.proc__card h3{color:#fff;font-size:clamp(21px,1.9vw,26px);font-weight:500;line-height:1.15;margin-bottom:10px}
+.proc__card p{color:rgba(255,255,255,.92);font-size:clamp(14px,1.15vw,15.5px);line-height:1.55;margin:0}
+.proc__more{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:800;font-size:13.5px;color:#fff}
+.proc__more svg{width:15px;height:15px;transition:transform .35s var(--ease)}
+.proc__card:hover .proc__more svg{transform:translateX(5px)}
+.proc__head{display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(20px,4vw,60px);margin-bottom:clamp(34px,5vw,60px)}
+.proc__head h2{font-size:clamp(34px,5vw,64px);font-weight:400;max-width:12em;margin-top:16px}
+.proc__head h2 em{font-style:italic;color:var(--blue-500)}
+.proc__head p{max-width:340px;text-align:right;color:var(--ink-soft);font-size:clamp(15px,1.4vw,17px)}
+@media(max-width:900px){
+  .proc__head{flex-direction:column;align-items:flex-start}.proc__head p{text-align:left}
+  .proc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 18px 26px;margin:0 calc(-1 * clamp(18px,5vw,52px));-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .proc::-webkit-scrollbar{display:none}
+  .proc__card{flex:0 0 min(78vw,300px);min-height:440px;scroll-snap-align:center}
+  .proc.in .proc__card:nth-child(n){--o:0px}
+}
+@media(prefers-reduced-motion:reduce){.proc__card{opacity:1;transform:none}}
+.proc.reveal{opacity:1;transform:none;transition:none}
