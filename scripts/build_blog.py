@@ -301,6 +301,8 @@ JS_BASE = """<script>
 </script>
 """
 
+PROC_JS = (Path(__file__).resolve().parent / "process.js").read_text(encoding="utf-8")
+
 JS_BUSCA = """<script>
 (function(){
   var norm=function(t){return t.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase()};
@@ -515,7 +517,7 @@ def pagina_indice(todos):
   </div>
 </div></div></section>
 </main>
-""" + rodape() + JS_BASE + JS_BUSCA + "</body></html>\n"
+""" + rodape() + JS_BASE + JS_BUSCA + "<script>\n" + PROC_JS + "</script>\n</body></html>\n"
     return h
 
 
@@ -584,6 +586,8 @@ def main():
     # seção do blog na página principal
     idx = (ROOT / "index.html").read_text(encoding="utf-8")
     idx = re.sub(r"/\* PROC:START \*/.*?/\* PROC:END \*/", lambda m: "/* PROC:START */\n" + PROC + "/* PROC:END */", idx, flags=re.S)
+    procjs = "<!-- PROCJS:START -->\n<script>\n" + PROC_JS + "</script>\n<!-- PROCJS:END -->"
+    idx = re.sub(r"<!-- PROCJS:START -->.*?<!-- PROCJS:END -->", lambda m: procjs, idx, flags=re.S)
     idx = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: secao_index(POSTS), idx, flags=re.S)
     (ROOT / "index.html").write_text(idx, encoding="utf-8")
 
