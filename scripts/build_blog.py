@@ -142,6 +142,17 @@ def parse_artigo(paras):
 # Trechos reescritos depois do .docx (o texto abaixo substitui a seção de mesmo título). Formato: "## título" + parágrafos.
 SUBSTITUICOES = {
     "diabetes-e-saude-mental-cansaco-emocional": {
+        "Isso significa depressão?": """## Sobrecarga com o diabetes e depressão: como compreender a diferença?
+
+Sentir tristeza, frustração ou sobrecarga diante das exigências do diabetes **não significa, por si só, ter depressão**. Essas experiências podem estar relacionadas às preocupações e ao esforço de cuidar da condição todos os dias — o chamado sofrimento relacionado ao diabetes.
+
+Esse sofrimento pode aparecer, por exemplo, como desânimo diante dos resultados da glicemia, preocupação com complicações ou sensação de não conseguir uma pausa das responsabilidades do tratamento. Embora mereça atenção e cuidado, ele não constitui, por si só, um transtorno mental.
+
+Já a depressão é uma condição clínica que pode envolver tristeza persistente, perda de interesse ou prazer e outras alterações que prejudicam a vida cotidiana. Sua identificação exige uma avaliação profissional, que considera o conjunto dos sintomas, sua duração, intensidade e repercussões na vida da pessoa.
+
+Essa distinção é importante porque **o sofrimento relacionado ao diabetes e a depressão podem coexistir**. Por isso, tristeza frequente, isolamento, perda de prazer ou dificuldade significativa para realizar atividades precisam ser avaliados, em vez de atribuídos automaticamente às exigências do tratamento.
+
+Você não precisa descobrir sozinho se está vivendo uma sobrecarga relacionada ao diabetes, uma depressão ou ambas. Compartilhar o que está acontecendo permite compreender suas necessidades e buscar o cuidado adequado.""",
         "Como a ACT pode contribuir?": """## Como continuar se cuidando nos dias difíceis?
 
 Um resultado de glicemia diferente do esperado pode trazer frustração, medo e pensamentos duros sobre si, como “eu nunca faço nada direito”. Em alguns momentos, isso pode aumentar a vontade de adiar uma consulta ou se afastar do cuidado.
