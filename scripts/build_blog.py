@@ -141,6 +141,17 @@ def parse_artigo(paras):
 
 # Trechos reescritos depois do .docx (o texto abaixo substitui a seção de mesmo título). Formato: "## título" + parágrafos.
 SUBSTITUICOES = {
+    "diabetes-e-saude-mental-cansaco-emocional": {
+        "Como a ACT pode contribuir?": """## Como continuar se cuidando nos dias difíceis?
+
+Um resultado de glicemia diferente do esperado pode trazer frustração, medo e pensamentos duros sobre si, como “eu nunca faço nada direito”. Em alguns momentos, isso pode aumentar a vontade de adiar uma consulta ou se afastar do cuidado.
+
+Quando isso acontece, vale perceber o que esse resultado despertou e como você está reagindo. Um pensamento de fracasso, por mais convincente que pareça, não resume quem você é nem todo o esforço envolvido em conviver com o diabetes.
+
+Você não precisa esperar a frustração passar para buscar apoio. Pode começar com perguntas como: **“O que preciso compreender sobre esse resultado? O que está dificultando meu cuidado? Qual passo é possível dar agora?”** Levar essas dúvidas à consulta ou compartilhar uma dificuldade com alguém de confiança pode ser um começo.
+
+Esse olhar também inclui as condições da sua vida. Falta de dinheiro, informação, acesso ao tratamento ou apoio são dificuldades reais que precisam ser consideradas. Cuidar de si envolve encontrar caminhos possíveis dentro da sua realidade e buscar ajuda para enfrentar aquilo que você não consegue resolver sozinho.""",
+    },
     "diabetes-na-familia-apoio-e-autonomia": {
         "Uma reflexão orientada pela ACT": """## Como apoiar quem você ama sem transformar o cuidado em cobrança
 
@@ -159,6 +170,18 @@ O cuidado pode ser construído nesses pequenos gestos: estar disponível, respei
 
 # Perguntas extras (somam-se às do .docx). Formato: (pergunta, resposta).
 FAQ_EXTRAS = {
+    "diabetes-e-saude-mental-cansaco-emocional": [
+        ("Um resultado ruim significa que eu falhei?",
+         "Não. Um resultado diferente do esperado é uma informação para ser compreendida com a equipe de saúde, não uma sentença sobre quem você é. Um pensamento de fracasso, por mais convincente que pareça, não resume todo o esforço envolvido em conviver com o diabetes."),
+        ("Por que sinto vontade de adiar a consulta depois de um resultado difícil?",
+         "Frustração, medo e pensamentos duros sobre si podem aumentar a vontade de se afastar do cuidado. Perceber o que o resultado despertou e como você está reagindo é um primeiro passo. Levar essa dificuldade à consulta também faz parte do tratamento."),
+        ("Preciso esperar a frustração passar para pedir ajuda?",
+         "Não. Você pode buscar apoio mesmo sentindo frustração ou medo. Perguntas como “O que preciso compreender sobre esse resultado?” e “Qual passo é possível dar agora?” ajudam a começar a conversa."),
+        ("E se a dificuldade for falta de dinheiro, de informação ou de acesso ao tratamento?",
+         "Essas dificuldades são reais e precisam ser consideradas, e não transformadas em culpa pessoal. Cuidar de si envolve encontrar caminhos possíveis dentro da sua realidade e buscar ajuda para enfrentar aquilo que você não consegue resolver sozinho."),
+        ("Com quem posso compartilhar o que estou sentindo?",
+         "Com a equipe que acompanha o seu diabetes, com um profissional de saúde mental ou com alguém de confiança. Não é necessário dar um nome ao sofrimento antes de pedir ajuda: uma frase simples, como “Preciso conversar sobre como estou me sentindo em relação ao diabetes”, já é um começo."),
+    ],
     "diabetes-na-familia-apoio-e-autonomia": [
         ("Sentir preocupação com meu familiar significa que estou fazendo algo errado?",
          "Não. Preocupar-se é compreensível. Você pode reconhecer esse sentimento e, ainda assim, escolher como agir: escutar até o fim, perguntar se a pessoa quer uma sugestão ou tentar entender o que está difícil antes de cobrar uma mudança."),
